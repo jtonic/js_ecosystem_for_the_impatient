@@ -9,15 +9,13 @@ How to use help?
 ```
 <br/>
 
-
-
-
-
 - Get a quick help about an npm command
 
 ```sh
   $ npm install -h
 ```
+
+<br/>
 
 - Get a comprehensive information about a npm command
 
@@ -26,12 +24,16 @@ How to use help?
   $ npm help install
 ```
 
+<br/>
+
 - Search in help topics
 
 ```sh
   $ npm help-search remove
 ```
 
+
+<br/>
 
 Npm scripts
 ---
