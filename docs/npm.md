@@ -11,27 +11,29 @@ How to use help?
 
 
 
-- get a quick help about an npm command
+
+
+- Get a quick help about an npm command
 
 ```sh
   $ npm install -h
 ```
 
-- get a comprehensive information about a npm command
+- Get a comprehensive information about a npm command
 
 
 ```sh
   $ npm help install
 ```
 
-- search in help topics
+- Search in help topics
 
 ```sh
   $ npm help-search remove
 ```
 
 
-npm scripts
+Npm scripts
 ---
 	
 Npm scripts are included in the scripts property in package.json
