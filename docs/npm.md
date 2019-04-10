@@ -309,8 +309,6 @@ $ git push origin master
 - Push tag to origin/master
 `git push --tags`
 
-> <span style="color: red">Continue formating from here
-
 - Updating the npm package to a new patch version
 
     - Do whatever changes is required
@@ -338,23 +336,27 @@ Versioning the npm package
 
   `B.F.Bf.x`
 
+
   M major -> B break
 
   m minor -> F feature
 
   p patch  -> Bf bug fix
 
-	How to see the version of the current npm module (plus node, npm and other packages version).
+> <span style="color: red">Continue formating from here
 
-  ```sh
-  $ npm version
-  ```
-	- Bump the version
+How to see the version of the current npm module (plus node, npm and other packages version).
 
-  ```sh
-		$ npm version patch -> increase the patch version segment
-		$ npm version $my_version -> setup a specific version
-  ```
+```sh
+$ npm version
+```
+
+- Bump the version
+
+```sh
+$ npm version patch -> increase the patch version segment
+$ npm version $my_version -> setup a specific version
+```
 
 
 How easy is to work with both application and a dependency using npm link
