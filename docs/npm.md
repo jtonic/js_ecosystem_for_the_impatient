@@ -74,10 +74,10 @@ E.g: Running the following command in the project home directory creates a new U
 
 <br/>
 
-Create a new JS npm-based project (BE or FE)
+Create a new JS npm-based project
 ---
 
-A new npm based project can be created with the following commands
+A new npm based project can be created with one the following commands
 
 ```sh
   $ npm init
@@ -86,8 +86,8 @@ A new npm based project can be created with the following commands
 
 - setting the init value (used by npm init)
 
-```javascript
-	$ npm set init-author-name ‘Antonel-Ernest Pazargic’
+```sh
+  $ npm set init-author-name ‘Antonel-Ernest Pazargic’
   $ npm config set init-author-name ‘Antonel-Ernest Pazargic’
 ```
 
@@ -95,10 +95,9 @@ A new npm based project can be created with the following commands
 
 - See this documentation for all the init values to setup.
 
-```javascript
-  [npm config](https://docs.npmjs.com/misc/config) and search for init-
-  [npm init](https://docs.npmjs.com/misc/config#init-author-name)
-```
+Go to [npm config](https://docs.npmjs.com/misc/config) and search for `init-`
+
+Or better go to one of the [npm init configurations](https://docs.npmjs.com/misc/config#init-author-name)
 
 <br/>
 
@@ -130,7 +129,7 @@ Npm configuration
 $ npm config list
 $ npm c ls
 ```
-The result looks like:
+The result looks like
 
 ![result](./images/npm_config_result.png "Result")
 
@@ -140,6 +139,14 @@ The result looks like:
 
 ```sh
   $ npm c ls -l
+```
+This is very useful to see what configuration is available for changing (note: some configurations are read-only).
+
+Moreover the changed configuration are marked as (overriden). See below how a changed init configuration looks like:
+
+```text
+init-author-email = "Antonel-Ernest.Pazargic@ing.com"
+; init-author-email = "" (overridden)
 ```
 
 <br/>
@@ -222,17 +229,17 @@ Module dependencies
 
 <br/>
 
-    - show only dev or prod dependencies
+  - list only dev dependencies
 
-    ```sh
-    $ npm list --depth 0 --dev true  # or --prod true
-    ```
+  ```sh
+  $ npm list --depth 0 --dev true  # or --prod true
+  ```
 
-    - parseable format -> to see where the global dependencies resides in
+  - parseable format -> to see where the global dependencies resides in
 
-    ```sh
-    $ npm list --depth 0 --global true --parseable true
-    ```
+  ```sh
+  $ npm list --depth 0 --global true --parseable true
+  ```
 
   > Note: -g ⇔ --global true
 
@@ -241,8 +248,7 @@ Module dependencies
 Npm registry
 ---
 
-[registry](https://www.npmjs.com) -> search for the package, e.g. lodash
-
+In [registry](https://www.npmjs.com) we can search for a package, e.g.
 [lodash](https://www.npmjs.com/package/lodash)
 
 <br/>
@@ -263,17 +269,19 @@ Publishing a package
 - sign up on npmjs.com
 
 - register the npmjs.com username
-
 `$ npm adduser`
 
 - create a new folder, say ‘my-test-package’ and make it current
 
 - create a new github.com repository on https://github.com/{userName}
+
 - enable VCS (git)
 `$ git init`
 
 - add git remote repository
-`$ git remote add origin https://github.com/jtonic/my-test-package.git`
+```sh
+$ git remote add origin https://github.com/jtonic/my-test-package.git`
+```
 
 - create a username (or organization name) scope package json file
 
@@ -303,45 +311,50 @@ $ git push origin master
 
 > <span style="color: red">Continue formating from here
 
-See below the published npm package in the registry
+- Updating the npm package to a new patch version
 
-
-Updating the npm package to a new patch version
-
-Do whatever changes is required
-$ npm version patch  // this changes the version in package.json, commit the change and make a tag
-$ git push
-$ git push --tags
-$ npm publish --access public
+    - Do whatever changes is required
+    ```sh
+    $ npm version patch  // this changes the version in package.json, commit the change and make a tag
+    $ git push
+    $ git push --tags
+    $ npm publish --access public
+    ```
 
 Versioning the npm package
+---
 
-	See the semantic versioning
+  See the [semantic versioning](http://semver.org)
 
-	M.m.p.x (1.12.224)
-		M - major - 1
-		m - minor - 12
-		p - patch - 224
+  `M.m.p.x (1.12.224)`
+
+  M - major - 1
+
+  m - minor - 12
+
+  p - patch - 224
 
 	To better keep in mind the version elements semantics
 
-	B.F.Bf.x
+  `B.F.Bf.x`
 
-		M major -> B break
-		m minor -> F feature
-p patch  -> Bf bug fix
+  M major -> B break
 
+  m minor -> F feature
+
+  p patch  -> Bf bug fix
 
 	How to see the version of the current npm module (plus node, npm and other packages version).
 
-	$ npm version
+  ```sh
+  $ npm version
+  ```
+	- Bump the version
 
-	Bump the version
-
+  ```sh
 		$ npm version patch -> increase the patch version segment
-
 		$ npm version $my_version -> setup a specific version
-
+  ```
 
 
 How easy is to work with both application and a dependency using npm link
