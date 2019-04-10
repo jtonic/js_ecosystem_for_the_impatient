@@ -408,8 +408,9 @@ See here for a more comprehensive explanation:
 
 
 Semantic versioning and npm
+---
 
-^4.0.0  -> ^ will use the latest minor version. Supposing 4.17.11 is the one then
+`^4.0.0`  -> `^` will use the latest minor version. Supposing 4.17.11 is the one then
 npm update
 $ npm i -S lodash@4.0.0 	-> lodash: ^4.11.1 in package json
 $ npm up -S lodash 		-> lodash: ^4.17.11 in package.json and npm ls -S --depth=0 --long=true
@@ -421,19 +422,18 @@ Use ~ with great care because it could break the code.
 
 Show the information about a package
 
-full output
+- full output
 
+```sh
 $ npm info lodash
+```
 
+- show only a specific section, such as versions
 
-
-show only a specific section, such as versions
-
+```sh
 $ npm info lodash versions  # show versions history
-
-	$ npm info lodash dist-tags.latest # show the latest version
-
-
+$ npm info lodash dist-tags.latest # show the latest version
+```
 
 
 List the globally installed packages
@@ -443,21 +443,28 @@ List the globally installed packages
 
 
 Miscellaneous npm commands
+---
 
-	$ npm repo lodash # opens the browser with the source  code repo of lodash
+- open the VCS repo of the module in default browser
 
-Execute npm command in silent mode
-	$ npm test --silent # or -s
+```sh
+$ npm repo lodash # opens the browser with the source  code repo of lodash
+```
 
-How to enforce the node and npm versions in npm package. In package.json add the following:
+- Execute npm command in silent mode (-s/--silent)
 
-	  "engines": {
-    "node": "~8.11.4",
-    "npm": "~5.6.0"
-  },****
+```sh
+$ npm test --silent # or -s
+```
 
+- How to enforce the node and npm versions in npm package. In package.json add the following:
 
-
+```json
+"engines": {
+  "node": "~8.11.4",
+  "npm": "~5.6.0"
+},
+```
 
 Useful links
 ---
