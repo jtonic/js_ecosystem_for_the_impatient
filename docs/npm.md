@@ -1,5 +1,5 @@
 How to use help?
-___
+---
 
 - Get help about the npm command
 
@@ -10,186 +10,241 @@ ___
 
 - get a quick help about an npm command
 
-$ npm install -h
+```sh
+  $ npm install -h
+```
+
+- get a comprehensive information about a npm command
 
 
-get a comprehensive information about a npm command
+```sh
+  $ npm help install
+```
 
-$ npm help install
+- search in help topics
 
-
-search in help topics
-
-$ npm help-search remove
-
-
+```sh
+  $ npm help-search remove
+```
 
 
 npm scripts
+---
 	
-npm scripts are included in the scripts property in package.json
+Npm scripts are included in the scripts property in package.json
 
-run a script
+- run a script
 
-$ npm run my_script
+```sh
+  $ npm run my_script
+```
 
-There are some popular scripts for which there are some shortcuts
+- There are some popular scripts for which there are some shortcuts
 
-$ npm run start -> $ npm start
+```sh
+  $ npm run start -> $ npm start
+  $ npm run test -> $ npm test | npm tst | npm t	
+```
 
-$ npm run test -> $ npm test | npm tst | npm t	
+- npm list scripts
 
-npm list scripts
-
+```sh
 	$ npm run 
-
-	npm commands used (regularly) in scripts resides in ./node_modules/.bin (e.g.: mocka, prettier, eslint, uuid).
-	E.g: Running the following command in the project home directory creates a new UUID
-
-	$ uuid v1 => af5ccf30-4d48-11e9-9ade-6dad5455bcd3
-
+```
 	
+Npm commands used (regularly) in scripts resides in ./node_modules/.bin (e.g.: mocka, prettier, eslint, uuid).
 
+E.g: Running the following command in the project home directory creates a new UUID
 
+    $ uuid v1 => af5ccf30-4d48-11e9-9ade-6dad5455bcd3
 
 Create a new JS npm-based project (BE or FE)
+---
 
-$ npm init
+```sh
+  $ npm init
+  $ npm init -y    # with all the default values accepted
+```
 
-	$ npm init -y    # with all the default values accepted
+- npm init default values for npm init command
 
-npm init default values for npm init command
-
-setting the init value
+- setting the init value
 
 	$ npm set init-author-name ‘Antonel-Ernest Pazargic’
 	$ npm config set init-author-name ‘Antonel-Ernest Pazargic’
 
-	See this documentation for all the init values to setup.
-	https://docs.npmjs.com/misc/config and search for init-
-	https://docs.npmjs.com/misc/config#init-author-name 
+See this documentation for all the init values to setup.
 
-	All npm user-scoped settings/config are in the ~/.npmrc
+	[npm config](https://docs.npmjs.com/misc/config) and search for init-
+	[npm init](https://docs.npmjs.com/misc/config#init-author-name) 
 
-getting an init value
+> All npm user-scoped settings/config are in the ~/.npmrc
 
-$ npm get init-author-name
-$ npm config get init-author-name
+- Getting an init value
 
+```sh
+  $ npm get init-author-name
+  $ npm config get init-author-name
+```
 
-delete a default value for npm init
+- delete a default value for npm init
 
-$ npm config delete init-author-name
-
+```sh
+  $ npm config delete init-author-name
+```
 
 Npm configuration
+---
 
-show npm configuration (what is in the ~/.npmrc and more)
+- Show npm configuration (what is in the ~/.npmrc and more)
+
+```sh
 $ npm config list
 $ npm c ls
-show also the default values
-$ npm c ls -l
-useful configuration
-save-exact (install the latest version exactly)
-$ npm c set save-exact=true
---save (-S) by default
-npm c set save=true
+```
 
+- Show also the default values
+
+```sh
+  $ npm c ls -l
+```
+
+- Useful configuration
+  - save-exact (install the latest version exactly)
+  
+    ```sh
+    $ npm c set save-exact=true
+    ```
+  - --save (-S) by default
+    ```text
+      npm c set save=true
+    ```
 
 
 Dependencies
+---
 
-install dependencies
+- install dependencies
 
-in production code
+  - in production code
+    ```sh
+    $ npm install lodash --save
+    $ npm i lodash -S
+    ```
+  - in dev code
 
+    ```sh
+    $ npm install karma --save-dev
+    $ npm i karma -D
+    ```
 
-$ npm install lodash --save
-$ npm i lodash -S
- 
-in dev code
+  - install a npm package from a local directory
+    ```sh
+    $ npm i -S ../npm1
+    ```
 
-$ npm install karma --save-dev
-$ npm i karma -D
+  - install a npm package from a git repo (github)
 
-install a npm package from a local directory
-$  npm i -S ../npm1
-install a npm package from a git repo (github)
-$ npm install https://github.com/jtonic/js-for-beginers.gitt#master --save
-$ npm install jtonic/js-for-beginners#master --save
+    ```sh  
+    $ npm install https://github.com/jtonic/js-for-beginers.gitt#master --save
+    $ npm install jtonic/js-for-beginners#master --save
+    ```
 
-remove dependencies no longer needed
+  - remove dependencies no longer needed
 
-During the development there are times when some no more wanted packages are still in the node_modules, but they are no longer in the package.json.
-In order to do a package cleanup 
+  During the development there are times when some no more wanted packages are still in the node_modules, but they are no longer in the package.json.
+  In order to do a package cleanup 
 
-$ npm prune
+  ```sh
+  $ npm prune
+  ```
 
-And when preparing the production code
+  And when preparing the production code
 
-$ npm prune --production -> no more --save-dev dependencies in the node_modules
+  ```sh
+  $ npm prune --production -> no more --save-dev dependencies in the node_modules
+  ```
 
-List the installed packages
+  - List the installed packages
 
-$ npm list  # or ll or la
-$ npm list --depth 0 # shows only the first dependencies level (the ones declared in the package.json. No transient dependencies)
-show only dev or prod dependencies 
+  ```sh
+  $ npm list  # or ll or la
+  $ npm list --depth 0 # shows only the first dependencies level (the ones declared in the package.json. No transient dependencies)
+  ```
 
-$ npm list --depth 0 --dev true  # or --prod true
+    - show only dev or prod dependencies 
 
-parseable format -> to see where the global dependencies resides in
+    ```sh
+    $ npm list --depth 0 --dev true  # or --prod true
+    ```
 
-$ npm list --depth 0 --global true --parseable true
+    - parseable format -> to see where the global dependencies resides in
+
+    ```sh
+    $ npm list --depth 0 --global true --parseable true
+    ```	
+    > Note: -g ⇔ --global true
+
 	
-Note: -g ⇔ --global true
-
-	
-
 Npm registry
+---
+[registry](https://www.npmjs.com) -> search for the package, e.g. lodash
 
-https://www.npmjs.com -> search for the package, e.g. lodash
-https://www.npmjs.com/package/lodash 
+[lodash](https://www.npmjs.com/package/lodash) 
 
-to see the package.json information 
+How to see the package.json information? 
 http://registry.npmjs.org/lodash (or http://npm.im/lodash )
-Note: In order to see the json pretty formatted you can install a browser add-on, extension. 
+> Note: In order to see the json pretty formatted you can install a browser add-on, extension. 
 For Opera I din install json-lite https://addons.opera.com/en/extensions/details/json-lite/ 
 
 
-
-
 Publishing a package
+---
 
-sign up on npmjs.com
-register the npmjs.com username
-$ npm adduser
-create a new folder, say ‘my-test-package’ and make it current
-create a new github.com repository on https://github.com/{userName}
-enable VCS (git)
-$ git init
-add git remote repository
-$ git remote add origin https://github.com/jtonic/my-test-package.git
-create a username (or organization name) scope package json file
+- sign up on npmjs.com
+  
+- register the npmjs.com username
+  
+`$ npm adduser`
+
+- create a new folder, say ‘my-test-package’ and make it current
+
+- create a new github.com repository on https://github.com/{userName}
+- enable VCS (git)
+`$ git init`
+
+- add git remote repository
+`$ git remote add origin https://github.com/jtonic/my-test-package.git`
+
+- create a username (or organization name) scope package json file
+  
+```sh
 $ npm init --scope=@npm_username
 $ git add .
 $ git commit -m ‘Initial commit’
 $ git push origin master
-publish to npmjs registry
-$ npm publish --access public
-See the information about the published package
-$ npm info @jtonic/my-test-package
-See the github repo of the npm package
-npm repo @jtonic/my-test-package
-Or see the package info in browser http://registry.npmjs.org/@jtonic/my-test-package 
-Create a git tag
-git tag 0.1.0
-Push tag to origin/master
-git push --tags
+```
 
+- publish to npmjs registry
+`$ npm publish --access public`
+
+- See the information about the published package
+`$ npm info @jtonic/my-test-package`
+
+- See the github repo of the npm package
+`npm repo @jtonic/my-test-package`
+
+- Or see the package info in browser http://registry.npmjs.org/@jtonic/my-test-package 
+
+- Create a git tag
+`git tag 0.1.0`
+
+- Push tag to origin/master
+`git push --tags`
+
+> <span style="color: red">Continue formating from here
 
 See below the published npm package in the registry
-
-
 
 
 Updating the npm package to a new patch version
