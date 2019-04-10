@@ -460,6 +460,7 @@ How to enforce the node and npm versions in npm package. In package.json add the
 
 
 Useful links
+---
 
 https://docs.npmjs.com/misc/config#shorthands-and-other-cli-niceties
 https://docs.npmjs.com/misc/scripts
