@@ -5,7 +5,7 @@
   * ECMAScript
   * TypeScript
 * Tools
-  * Npm
+  * [npm](npm.md)
   * Yeoman
   * Visual Studio Code
 * [Backend](be.md)
