@@ -1,5 +1,5 @@
 How to use help?
-===
+---
 
 - Get help about the npm command
 
