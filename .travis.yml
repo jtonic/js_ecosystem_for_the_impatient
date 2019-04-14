@@ -10,6 +10,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   local_dir: docs
+  verbose: true
   github_token: $GITHUB_TOKEN
   on:
     branch: master
