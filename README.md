@@ -23,7 +23,10 @@ deploy:
   on:
     branch: master
 ```
-Strange enough generating the revealjs (reveal-md) presentation slides in $github_repo/docs all is fine.
+      - Strange enough generating the revealjs (reveal-md) presentation slides in $github_repo/docs slides.md -> slides.html, and a new file symlink to slides.html named index.html is generated. This doesn't work on github pages.
+      - In oder to handle this (with my poor knowledge about revealjs/reveal-md) I manually did the following: 1. delete the symlink and rename slides.md to index.md.
+      - Ask for further support [here](https://github.com/webpro/reveal-md/issues/24)
+
 
 This project is CI with TravisCI (which is free for github)
 
