@@ -8,7 +8,7 @@ revealOptions:
 ---
 # Local
 
-This will serve the presentation
+This will serve my presentation
 
 and open a browser to view it
 
