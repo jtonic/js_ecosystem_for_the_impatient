@@ -1,0 +1,25 @@
+{
+  "name": "js_ecosystem_for_the_impatient",
+  "version": "1.0.0",
+  "description": "It is not doubt the JS is one of the most popular language, because its language for the web nature.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "reveal-md": "^3.0.4"
+  },
+  "scripts": {
+    "presentation": "reveal-md slides.md",
+    "generate": "reveal-md slides.md --static docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtonic/js_ecosystem_for_the_impatient.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtonic/js_ecosystem_for_the_impatient/issues"
+  },
+  "homepage": "https://github.com/jtonic/js_ecosystem_for_the_impatient#readme"
+}
