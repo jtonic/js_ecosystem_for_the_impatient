@@ -13,3 +13,10 @@ deploy:
   github_token: $GITHUB_TOKEN
   on:
     branch: master
+
+notifications:
+  email:
+    recipients:
+    - antonel.pazargic@gmail.com
+    on_success: change
+    on_failure: always
