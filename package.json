@@ -1,6 +1,6 @@
 {
   "name": "js_ecosystem_for_the_impatient",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "It is not doubt the JS is one of the most popular language, because its language for the web nature.",
   "main": "index.js",
   "dependencies": {},
