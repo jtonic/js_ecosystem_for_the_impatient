@@ -9,7 +9,7 @@ script: npm run generate
 deploy:
   provider: pages
   skip_cleanup: true
-  local_dir: docs/_build/html
+  local_dir: docs/_build
   verbose: true
   github_token: $GITHUB_TOKEN
   on:

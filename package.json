@@ -9,7 +9,7 @@
   },
   "scripts": {
     "presentation": "reveal-md slides.md",
-    "generate": "reveal-md slides.md --static docs"
+    "generate": "reveal-md slides.md --static docs/_build"
   },
   "repository": {
     "type": "git",
