@@ -9,9 +9,11 @@ revealOptions:
 JS ecosystem for the impatient
 ---
 
+<div style="text-align=left">
 Without a doubt, since quite some time, javascript (JS) became one of the most popular language.
 
 Its reign came from its *language of the web* nature.
+</div>
 
 <!--s-->
 
@@ -19,7 +21,7 @@ Because of its huge popularity, in time, it started to conquer some other peaks 
 - backend development (NodeJS, ExpressJS),
 - tooling (npm/yarn, webpack, gulp, grunt),
 - mobile (Xamarim, React Native, Cordova),
-- desktop (Electron, Athom, Visual Studio Code),
+- desktop (Electron, Atom, Visual Studio Code),
 - presentation (RevealJS, Reveal-md)
 
 Note: This is a speaker note, you need node 8.x installed
