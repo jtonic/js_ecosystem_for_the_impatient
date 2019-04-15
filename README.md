@@ -1,14 +1,23 @@
+[![Build Status](https://travis-ci.org/jtonic/js_ecosystem_for_the_impatient.svg?branch=master)](https://travis-ci.org/jtonic/js_ecosystem_for_the_impatient)
+
 [Project Page](https://jtonic.github.io/js_ecosystem_for_the_impatient/)
 
-# JS ecosystem for the impatient
+JS ecosystem for the impatient
+===
 
-It is not doubt the JS is one of the most popular language, because its language for the web nature.
+<div style="text-align: right">by Antonel-Ernest Pazargic</div>
 
-But the JS language runs not only on browsers. It is quite popular for different tools \(for CI/CD\) but also for BE side \(NodeJS, ExpressJS\).
+Without a doubt since quite some time a JS became one of the most popular language. Its reign came from its "language of the web" nature.
 
-In the last years the JS ecosystem became very large....
+In time, because its huge popularity, it started to conquer some other peaks such as:
+- backend development (NodeJS, ExpressJS),
+- tooling (npm/yarn, webpack, gulp, grunt),
+- mobile (Xamarim, React Native, Cordova),
+- desktop (Electron, Athom, Visual Studio Code),
+- presentation (RevealJS, Reveal-md),
 
-**TBC**
+The attached [github pages presentation](https://jtonic.github.io/js_ecosystem_for_the_impatient/) is about how to get quite acquainted to the JS ecosystem. It is not an in deep dive in the included topics but my abition is to create a good presentation for the impatient.
+
 
 ### <span style="color:red"> __Issues:__
 
@@ -32,5 +41,4 @@ In the last years the JS ecosystem became very large....
 
 This project is CI with TravisCI (which is free for github)
 
-[![Build Status](https://travis-ci.org/jtonic/js_ecosystem_for_the_impatient.svg?branch=master)](https://travis-ci.org/jtonic/js_ecosystem_for_the_impatient)
 
