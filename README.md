@@ -12,7 +12,7 @@ In time, because its huge popularity, it started to conquer some other peaks suc
 - tooling (npm/yarn, webpack, gulp, grunt),
 - mobile (Xamarim, React Native, Cordova),
 - desktop (Electron, Athom, Visual Studio Code),
-- presentation (RevealJS, Reveal-md),
+- presentation (RevealJS, Reveal-md)
 
 The attached [github pages presentation](https://jtonic.github.io/js_ecosystem_for_the_impatient/) is about how to get quite acquainted to the JS ecosystem. It is not an in deep dive in the included topics but my abition is to create a good presentation for the impatient.
 

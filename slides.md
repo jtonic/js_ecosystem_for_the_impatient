@@ -6,21 +6,19 @@ theme: solarized
 revealOptions:
     transition: 'fade'
 ---
-# Local
+JS ecosystem for the impatient
+===
 
-This will serve my presentation
+Without a doubt since quite some time a JS became one of the most popular language. Its reign came from its "language of the web" nature.
 
-and open a browser to view it
+In time, because its huge popularity, it started to conquer some other peaks such as:
+- backend development (NodeJS, ExpressJS),
+- tooling (npm/yarn, webpack, gulp, grunt),
+- mobile (Xamarim, React Native, Cordova),
+- desktop (Electron, Athom, Visual Studio Code),
+- presentation (RevealJS, Reveal-md)
 
-* clone the repo
-* edit the `slides.md` file
-* then:
-```
-npm install
-npm run presentation
-```
-
-Note: This is a speaker note, you need node 6.x installed
+Note: This is a speaker note, you need node 8.x installed
 
 <!--s-->
 
