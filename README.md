@@ -5,8 +5,6 @@
 JS ecosystem for the impatient
 ===
 
-<div style="text-align: right">by Antonel-Ernest Pazargic</div>
-
 Without a doubt since quite some time a JS became one of the most popular language. Its reign came from its "language of the web" nature.
 
 In time, because its huge popularity, it started to conquer some other peaks such as:
