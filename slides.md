@@ -1,5 +1,5 @@
 ---
-title: Slides Template
+title: JS ecosystem for the impatient
 separator: <!--s-->
 verticalSeparator: <!--v-->
 theme: solarized
@@ -22,13 +22,9 @@ Note: This is a speaker note, you need node 8.x installed
 
 <!--s-->
 
-# GitHub Pages
+# Node Package Manager (npm)
 
-* fork the repo
-* setup a build in travis for the fork - don't forget the env var with your personal access token
-* edit the `slides.md` file
-* push to github
-* view presentation on GitHub - in the project pages for your repo
+* TBD
 
 <!--v-->
 
