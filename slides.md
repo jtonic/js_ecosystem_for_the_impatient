@@ -7,11 +7,15 @@ revealOptions:
     transition: 'fade'
 ---
 JS ecosystem for the impatient
-===
+---
 
-Without a doubt since quite some time a JS became one of the most popular language. Its reign came from its "language of the web" nature.
+Without a doubt, since quite some time, javascript (JS) became one of the most popular language.
 
-In time, because its huge popularity, it started to conquer some other peaks such as:
+Its reign came from its *language of the web* nature.
+
+<!--s-->
+
+Because of its huge popularity, in time, it started to conquer some other peaks such as:
 - backend development (NodeJS, ExpressJS),
 - tooling (npm/yarn, webpack, gulp, grunt),
 - mobile (Xamarim, React Native, Cordova),
