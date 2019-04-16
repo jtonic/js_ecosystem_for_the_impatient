@@ -1,25 +1,26 @@
 # Summary
 
 * [Introduction](README.md)
-* Languages
-  * ECMAScript
-  * TypeScript
-* Tools
-  * Npm
-  * Yeoman
-  * Visual Studio Code
+* [History](history.md)
+* [Languages](languages.md)
+  * [ECMAScript](es.md)
+  * [TypeScript](ts.md)
+* [Tools](tools.md)
+  * [Npm](npm.md)
+  * [Yeoman](yo.md)
+  * [Visual Studio Code](code.md)
 * [Backend](be.md)
-  * NodeJS
-  * ExpressJS
-* Frontend
-  * ReactJS
-  * Web components
-  * Polymer
-  * HTML
+  * [NodeJS](node.md)
+  * [ExpressJS](expressjs.md)
+* [Frontend](fe.md)
+  * [ReactJS](reactjs.md)
+  * [Web components](wc.md)
+  * [Polymer](polymer.md)
+  * [HTML](html.md)
 * [Styling](styling.md)
-  * CSS
-* [Code quality](code-quality.md)
-  * eslint
-  * JSDoc
+  * [CSS](css.md)
+* [Code quality](code_quality.md)
+  * [ESLint](eslint.md)
+  * [JSDoc](jsdoc.md)
 * [HTTP](http.md)
 
