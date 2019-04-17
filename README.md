@@ -2,12 +2,12 @@
 
 [Project Page](https://jtonic.github.io/js_ecosystem_for_the_impatient/)
 
-JS ecosystem for the impatient
-===
+# JS ecosystem for the impatient
 
 Without a doubt since quite some time a JS became one of the most popular language. Its reign came from its "language of the web" nature.
 
 In time, because its huge popularity, it started to conquer some other peaks such as:
+
 - backend development (NodeJS, ExpressJS),
 - tooling (npm/yarn, webpack, gulp, grunt),
 - mobile (Xamarim, React Native, Cordova),
@@ -16,8 +16,17 @@ In time, because its huge popularity, it started to conquer some other peaks suc
 
 The attached [github pages presentation](https://jtonic.github.io/js_ecosystem_for_the_impatient/) is about how to get quite acquainted to the JS ecosystem. It is not an in deep dive in the included topics but my abition is to create a good presentation for the impatient.
 
+### <span style="color:orange"> **Useful links/documentation**
 
-### <span style="color:red"> __Issues:__
+- [Publish gitbook on github pages](http://sangsoonam.github.io/2016/08/02/publish-gitbook-to-your-github-pages.html)
+- [Publish gitbook on github pages using gulp](https://gldraphael.com/blog/publishing-gitbook-to-github-pages/)
+
+
+### <span style="color:orange"> **TODO list**
+- publish github book to github pages with TravisCI
+- Check if it works
+
+### <span style="color:red"> **Issues:**
 
 - index.html is not deployed in github gh_page by using TravisCI with the following configuration:
 
@@ -32,11 +41,8 @@ The attached [github pages presentation](https://jtonic.github.io/js_ecosystem_f
       branch: master
   ```
 
-  - Strange enough generating the revealjs (reveal-md) presentation slides in $github_repo/docs slides.md -> slides.html, and a new file symlink to slides.html named index.html is generated. This doesn't work on github pages.
+  - Strange enough generating the revealjs (reveal-md) presentation slides in \$github_repo/docs slides.md -> slides.html, and a new file symlink to slides.html named index.html is generated. This doesn't work on github pages.
   - In oder to handle this (with my poor knowledge about revealjs/reveal-md) I manually did the following: 1. delete the symlink and rename slides.md to index.md.
   - Ask for further support [here](https://github.com/webpro/reveal-md/issues/24)
 
-
 This project is CI with TravisCI (which is free for github)
-
-
