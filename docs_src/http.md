@@ -1,4 +1,3 @@
-HTTP - Hyper Text Transport Protocol
----
+## HTTP - Hyper Text Transport Protocol
 
 TBD

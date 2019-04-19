@@ -1,4 +1,5 @@
-How to use help?
+# How to use help?
+
 ---
 
 - Get help about the npm command
@@ -7,6 +8,7 @@ How to use help?
     $ npm -h
     $ npm --help
 ```
+
 <br/>
 
 - Get a quick help about an npm command
@@ -18,7 +20,6 @@ How to use help?
 <br/>
 
 - Get a comprehensive information about a npm command
-
 
 ```sh
   $ npm help install
@@ -34,8 +35,7 @@ How to use help?
 
 <br/>
 
-Npm scripts
----
+## Npm scripts
 
 Npm scripts are included in the scripts property in package.json
 
@@ -74,8 +74,7 @@ E.g: Running the following command in the project home directory creates a new U
 
 <br/>
 
-Create a new JS npm-based project
----
+## Create a new JS npm-based project
 
 A new npm based project can be created with one the following commands
 
@@ -120,8 +119,7 @@ Or better go to one of the [npm init configurations](https://docs.npmjs.com/misc
 
 <br/>
 
-Npm configuration
----
+## Npm configuration
 
 - Show npm configuration (what is in the ~/.npmrc and more)
 
@@ -129,6 +127,7 @@ Npm configuration
 $ npm config list
 $ npm c ls
 ```
+
 The result looks like
 
 ![result](./images/npm_config_result.png "Result")
@@ -140,6 +139,7 @@ The result looks like
 ```sh
   $ npm c ls -l
 ```
+
 This is very useful to see what configuration is available for changing (note: some configurations are read-only).
 
 Moreover the changed configuration are marked as (overriden). See below how a changed init configuration looks like:
@@ -158,6 +158,7 @@ init-author-email = "Antonel-Ernest.Pazargic@ing.com"
     ```sh
     $ npm c set save-exact=true
     ```
+
   - --save (-S) by default
     ```text
     npm c set save=true
@@ -165,8 +166,7 @@ init-author-email = "Antonel-Ernest.Pazargic@ing.com"
 
 <br/>
 
-Module dependencies
----
+## Module dependencies
 
 - install dependencies
 
@@ -178,75 +178,74 @@ Module dependencies
 
 <br/>
 
-  - in devDependencies (using --save-dev/-D command option)
-
-    ```sh
-    $ npm install karma --save-dev
-    $ npm i karma -D
-    ```
-
-<br/>
-
-  - install a npm package from a local directory
-    ```sh
-    $ npm i -S ../npm1
-    ```
-
-<br/>
-
-  - install a npm package from a git repo (github)
-
-    ```sh
-    $ npm install https://github.com/jtonic/js-for-beginers.gitt#master --save
-    $ npm install jtonic/js-for-beginners#master --save
-    ```
-
-<br/>
-
-  - remove dependencies no longer needed
-
-  During the development there are times when some no more wanted packages are still in the node_modules, but they are no longer in the package.json.
-  In order to do a package cleanup
+- in devDependencies (using --save-dev/-D command option)
 
   ```sh
-  $ npm prune
-  ```
-
-  And when preparing the production code
-
-  ```sh
-  $ npm prune --production -> no more --save-dev dependencies in the node_modules
+  $ npm install karma --save-dev
+  $ npm i karma -D
   ```
 
 <br/>
 
-  - List the installed packages
-
+- install a npm package from a local directory
   ```sh
-  $ npm list  # or ll or la
-  $ npm list --depth 0 # shows only the first dependencies level (the ones declared in the package.json. No transient dependencies)
+  $ npm i -S ../npm1
   ```
 
 <br/>
 
-  - list only dev dependencies
+- install a npm package from a git repo (github)
 
   ```sh
-  $ npm list --depth 0 --dev true  # or --prod true
+  $ npm install https://github.com/jtonic/js-for-beginers.gitt#master --save
+  $ npm install jtonic/js-for-beginners#master --save
   ```
-
-  - parseable format -> to see where the global dependencies resides in
-
-  ```sh
-  $ npm list --depth 0 --global true --parseable true
-  ```
-
-  > Note: -g ⇔ --global true
 
 <br/>
 
-Npm registry
----
+- remove dependencies no longer needed
+
+During the development there are times when some no more wanted packages are still in the node_modules, but they are no longer in the package.json.
+In order to do a package cleanup
+
+```sh
+$ npm prune
+```
+
+And when preparing the production code
+
+```sh
+$ npm prune --production -> no more --save-dev dependencies in the node_modules
+```
+
+<br/>
+
+- List the installed packages
+
+```sh
+$ npm list  # or ll or la
+$ npm list --depth 0 # shows only the first dependencies level (the ones declared in the package.json. No transient dependencies)
+```
+
+<br/>
+
+- list only dev dependencies
+
+```sh
+$ npm list --depth 0 --dev true  # or --prod true
+```
+
+- parseable format -> to see where the global dependencies resides in
+
+```sh
+$ npm list --depth 0 --global true --parseable true
+```
+
+> Note: -g ⇔ --global true
+
+<br/>
+
+## Npm registry
 
 In [registry](https://www.npmjs.com) we can search for a package, e.g.
 [lodash](https://www.npmjs.com/package/lodash)
@@ -263,22 +262,22 @@ For Opera I've installed json-lite https://addons.opera.com/en/extensions/detail
 
 <br/>
 
-Publishing a package
----
+## Publishing a package
 
 - sign up on npmjs.com
 
 - register the npmjs.com username
-`$ npm adduser`
+  `$ npm adduser`
 
 - create a new folder, say ‘my-test-package’ and make it current
 
 - create a new github.com repository on https://github.com/{userName}
 
 - enable VCS (git)
-`$ git init`
+  `$ git init`
 
 - add git remote repository
+
 ```sh
 $ git remote add origin https://github.com/jtonic/my-test-package.git`
 ```
@@ -293,55 +292,54 @@ $ git push origin master
 ```
 
 - publish to npmjs registry
-`$ npm publish --access public`
+  `$ npm publish --access public`
 
 - See the information about the published package
-`$ npm info @jtonic/my-test-package`
+  `$ npm info @jtonic/my-test-package`
 
 - See the github repo of the npm package
-`npm repo @jtonic/my-test-package`
+  `npm repo @jtonic/my-test-package`
 
 - Or see the package info in browser http://registry.npmjs.org/@jtonic/my-test-package
 
 - Create a git tag
-`git tag 0.1.0`
+  `git tag 0.1.0`
 
 - Push tag to origin/master
-`git push --tags`
+  `git push --tags`
 
 - Updating the npm package to a new patch version
 
-    - Do whatever changes is required
-    ```sh
-    $ npm version patch  // this changes the version in package.json, commit the change and make a tag
-    $ git push
-    $ git push --tags
-    $ npm publish --access public
-    ```
+  - Do whatever changes is required
 
-Versioning the npm package
----
+  ```sh
+  $ npm version patch  // this changes the version in package.json, commit the change and make a tag
+  $ git push
+  $ git push --tags
+  $ npm publish --access public
+  ```
 
-  See the [semantic versioning](http://semver.org)
+## Versioning the npm package
 
-  `M.m.p.x (1.12.224)`
+See the [semantic versioning](http://semver.org)
 
-  M - major - 1
+`M.m.p.x (1.12.224)`
 
-  m - minor - 12
+M - major - 1
 
-  p - patch - 224
+m - minor - 12
 
-	To better keep in mind the version elements semantics
+p - patch - 224
 
-  `B.F.Bf.x`
+    To better keep in mind the version elements semantics
 
+`B.F.Bf.x`
 
-  M major -> B break
+M major -> B break
 
-  m minor -> F feature
+m minor -> F feature
 
-  p patch  -> Bf bug fix
+p patch -> Bf bug fix
 
 > <span style="color: red">Continue formating from here
 
@@ -358,7 +356,6 @@ $ npm version patch -> increase the patch version segment
 $ npm version $my_version -> setup a specific version
 ```
 
-
 How easy is to work with both application and a dependency using npm link
 
 Let’s suppose we have an nodejs application and a dependency my-test-package (both of them as npm module).
@@ -371,7 +368,6 @@ modify directly the files in the $my-app/node_modules/$path-to-my-test-package, 
 
 A more straightforward of doing this is using the npm link.
 
-
 Note: In examples below we have a scope for my-test-package (@jtonic) which is useful for scoping npm packages in npm registry. For simple cases (or when npm package resides only in git repo - github) you can leave it out.
 
 Steps:
@@ -380,13 +376,13 @@ $ npm link
 test the link
 $ npm ls -g --depth 0
 in my-app home dir
-$ npm link @jtonic/my-test-package
+\$ npm link @jtonic/my-test-package
 after this command completed we have:
 the dependency in ./node_module/@jtonic
 no entries in the dependencies section in package.json if the dependency was not yet there already
 No whenever we modify something in the my-test-package dependency (thanks to the symlink) the change is automatically seen in the my-app module/package
 
-	As soon as we find that the my-test-package is the way (stable) we like it to be it is time to replace the link and use the correct dependency. Follow these steps to do this:
+    As soon as we find that the my-test-package is the way (stable) we like it to be it is time to replace the link and use the correct dependency. Follow these steps to do this:
 
 in my-test-package home dir git commit changes, and npm publish the new version (say. 0.1.1)
 $ git add .
@@ -406,17 +402,15 @@ $ npm uninstall # delete global symlink
 
 See here for a more comprehensive explanation:
 
+## Semantic versioning and npm
 
-Semantic versioning and npm
----
-
-`^4.0.0`  -> `^` will use the latest minor version. Supposing 4.17.11 is the one then
+`^4.0.0` -> `^` will use the latest minor version. Supposing 4.17.11 is the one then
 npm update
 $ npm i -S lodash@4.0.0 	-> lodash: ^4.11.1 in package json
-$ npm up -S lodash 		-> lodash: ^4.17.11 in package.json and npm ls -S --depth=0 --long=true
+$ npm up -S lodash -> lodash: ^4.17.11 in package.json and npm ls -S --depth=0 --long=true
 
 ~3.7.2 -> ~ will use the latest major version. Supposing it is 4.17.11
-$ npm up -S lodash 		-> lodash: ^4.17.11 in package.json and npm ls -S --depth=0 --long=true
+\$ npm up -S lodash -> lodash: ^4.17.11 in package.json and npm ls -S --depth=0 --long=true
 
 Use ~ with great care because it could break the code.
 
@@ -435,15 +429,12 @@ $ npm info lodash versions  # show versions history
 $ npm info lodash dist-tags.latest # show the latest version
 ```
 
-
 List the globally installed packages
 
-	$ npm list --global true --depth 0
-	$ npm list --global true --depth 0 --long true  # further information about the package (home page, git repo, etc)
+    $ npm list --global true --depth 0
+    $ npm list --global true --depth 0 --long true  # further information about the package (home page, git repo, etc)
 
-
-Miscellaneous npm commands
----
+## Miscellaneous npm commands
 
 - open the VCS repo of the module in default browser
 
@@ -466,9 +457,7 @@ $ npm test --silent # or -s
 },
 ```
 
-Useful links
----
+## Useful links
 
 https://docs.npmjs.com/misc/config#shorthands-and-other-cli-niceties
 https://docs.npmjs.com/misc/scripts
-
