@@ -4,12 +4,12 @@ node_js:
 
 install: npm install
 
-script: npm run generate
+script: gitbook install && gitbook build ./docs_src
 
 deploy:
   provider: pages
   skip_cleanup: true
-  local_dir: docs
+  local_dir: docs_src/_book
   verbose: true
   github_token: $GITHUB_TOKEN
   on:
