@@ -7,7 +7,7 @@
   - [TypeScript (TBD)](ts.md)
 - [Tools (TBD)](tools.md)
   - [Npm (ongoing...)](npm.md)
-    - [npm link](npm.md)
+    - [npm link](npm-link.md)
   - [Yeoman (TBD)](yo.md)
   - [Visual Studio Code (TBD)](code.md)
 - [Backend (TBD)](be.md)
