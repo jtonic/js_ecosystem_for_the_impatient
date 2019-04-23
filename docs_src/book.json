@@ -1,17 +1,24 @@
 {
-  "title": "JS ecosystem for the impatient",
-  "plugins": [
-    "anchorjs",
-    "katex",
-    "block-align",
-    "flexible-alerts",
-    "creativecommons",
-    "smart-nav-collapse"
-  ],
-  "links": {
-    "sidebar": {
-      "Contact us / Support": "https://github.com/jtonic/js_ecosystem_for_the_impatient/issues"
+    "title": "JS ecosystem for the impatient",
+    "plugins": [
+        "anchorjs",
+        "katex",
+        "block-align",
+        "flexible-alerts",
+        "creativecommons",
+        "fontsettings",
+        "smart-nav-collapse"
+    ],
+    "links": {
+        "sidebar": {
+            "Contact us / Support": "https://github.com/jtonic/js_ecosystem_for_the_impatient/issues"
+        }
+    },
+    "pluginsConfig": {
+        "fontsettings": {
+            "theme": "night",
+            "family": "sans",
+            "size": 2
+        }
     }
-  },
-  "pluginsConfig": {}
 }
