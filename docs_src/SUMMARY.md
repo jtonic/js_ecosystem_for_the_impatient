@@ -6,7 +6,7 @@
   - [ECMAScript (TBD)](es.md)
   - [TypeScript (TBD)](ts.md)
 - [Tools (TBD)](tools.md)
-  - [Npm-(ongoing...)](npm.md)
+  - [Npm (ongoing...)](npm.md)
     - [npm link](npm.md)
   - [Yeoman (TBD)](yo.md)
   - [Visual Studio Code (TBD)](code.md)
