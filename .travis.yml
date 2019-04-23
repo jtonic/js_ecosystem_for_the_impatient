@@ -6,7 +6,7 @@ install:
   - npm install
   - npm install gitbook-cli --save-dev
 
-script: gitbook install && gitbook build ./docs_src
+script: gitbook install ./docs_src && gitbook build ./docs_src
 
 deploy:
   provider: pages

@@ -1,8 +1,16 @@
 {
-  "plugins": ["collapsible-menu"],
+  "title": "JS ecosystem for the impatient",
+  "plugins": [
+    "anchorjs",
+    "katex",
+    "block-align",
+    "flexible-alerts",
+    "creativecommons",
+    "smart-nav-collapse"
+  ],
   "links": {
     "sidebar": {
-      "Contact us / Support": "https://www.gitbook.com/contact"
+      "Contact us / Support": "https://github.com/jtonic/js_ecosystem_for_the_impatient/issues"
     }
   },
   "pluginsConfig": {}
