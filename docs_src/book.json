@@ -1,3 +1,10 @@
 {
-  "plugins": ["toggle-chapters"]
+  "gitbook": "2.x.x",
+  "plugins": ["collapsible-menu"],
+  "links": {
+    "sidebar": {
+      "Contact us / Support": "https://www.gitbook.com/contact"
+    }
+  },
+  "pluginsConfig": {}
 }
