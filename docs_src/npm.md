@@ -9,21 +9,31 @@ Javascript ecosystem evolution pace is tremendous. Practically whatever you need
 In order to (re)use these libraries (better known as packages or node modules) there was a need to have a way to register and fetch/download them from a registry and later refer them in the code. This is when npm come into play.
 
 So, node.js/npm allows modularization (or redistribution of the code) in a JavaScript application.
+
 - node.js uses CommonJS to facilitate the export/import of packages
 - npm easy the publication/download of those node modules/packages
+
+As an example a quick way of installing ExpressJS, a JS web framework written in JS which runs on top of node.js:
+
+```sh
+$ npm install express -g
+```
+
+> As we will see further -g stands for globally. The express module can be reffered to from anywhere in the filesystem. Without this switch the packate is installed in current directory (which has to be a node project - contains package.json)
 
 To those acquainted with java world, npm is for node.js(JavaScript) what maven is for java.
 
 There are other very useful things npm put on the table:
+
 - run scripts
 - <span style="color:red">TBD</span>
 
-# The npm installation
+## npm installation
 
-The npm is bundled with node.js, so when node.js is installed the npm is installed as well.
+Recent versions of node.js is bundled with npm, so, when node.js is installed the npm is installed as well.
 See [here](./node.md#nodejs-installation) how to install node.js.
 
-# How to use help?
+## How to use help?
 
 ---
 
