@@ -73,4 +73,69 @@ Follow the steps below to install Homebrew and node.js on MacOS machines.
 >
 > Moreover, node.js can also be installed from source code but this requires a C/C++ compilers, python 2.7 and GNU Make installed on machine. See [here](https://github.com/nodejs/node/blob/master/BUILDING.md) for further information of node.js installation from source.
 
+### Using node.js REPL
+
+A very useful tool for any modern language is the Read Eval Print Loop console.
+It allows to write/experiment simple snippets of code.
+I don't know if the term was already coined by somebody else, but I call this way of testing small piece of code in REPL **Experimental Driven Develoopment**.
+See a simple add function tested in node.js REPL.
+
+1. Start the REPL console
+
+```sh
+   $ node
+```
+
+2.  In the prompt mode `>` we define the javascript function add and call it.
+
+```text
+    > function sum(a, b) {
+    ... return a + b;
+    ... }
+    undefined
+    > console.log(`sum(1,1)=${sum(1,1)}`);
+    sum(1,1)=2
+    undefined
+    > sum
+    [Function: sum]
+    > sum.toString
+    [Function: toString]
+    > sum.toString()
+    'function sum(a, b) {\nreturn a + b;\n}'
+    >
+```
+
+As you can see as soon as ENTER is hit after a valid javascript expression the value of the expression is returned. In this case we see two undefined, the type function and the function definition.
+
+Moreover the `node` tool allows to run a snipet of code inside of file.
+Considering we have the following JS code in the test.js file.
+
+```javascript
+    function add(a, b) {
+        return a + b;
+    }
+
+    const result = add(1, 2);
+    console.log(`result=${result}`);
+```
+
+we can run the following command in the test.js directory
+
+```sh
+    $ node test.js
+```
+
+and the outcode is
+
+```test
+result=3
+```
+
+> To exit from REPL prompt there are 2 options:
+>
+> 1. press ctrl-c twice
+> 1. type .exit
+
+## Node modules
+
 <span style="color:red">TBD</span>
