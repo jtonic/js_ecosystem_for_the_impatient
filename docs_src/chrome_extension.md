@@ -18,4 +18,23 @@ The requirements for the mock-enhancer chrome extension:
 - (bonus) shortcut for the chrome extension popup
 - (bonus) shortcut to duplicate the current tab
 
+Another important aspect that I'm going to talk about is debugging a chrome extension
+
 ## Hello chrome extension world application
+
+## How to structure the extension
+
+## Create/update a site cookie
+
+## Find out a tab, make it current and refresh it
+
+## Create a chrome option
+
+For this extension it is required to fetch a file from gitlab. In order to use the gitlab REST API the Gitlab personal token is require.
+See [here](htttp://todo.com) <span style='color:red'>how to generate the gitlab personal token</span>
+
+To allow the user to setup his/her gitlab personal token the best way of doing this is through <span style='color:red'>continue from here</span>
+
+## How to use an js library using ES 6 module
+
+## How to debug a chrome extension
