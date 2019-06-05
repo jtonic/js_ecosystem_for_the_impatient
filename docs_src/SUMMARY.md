@@ -20,6 +20,7 @@
   - [Web components](wc.md)
   - [Polymer](polymer.md)
   - [HTML](html.md)
+  - [Chrome extension](chrome_extension.md)
 - [Styling](styling.md)
   - [CSS](css.md)
 - [Code quality](code_quality.md)
