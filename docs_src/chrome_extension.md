@@ -11,7 +11,7 @@ I will explain, gradually, in this chapter how to create a chrome extension from
 
 **The requirements for the mock-enhancer chrome extension:**
 
-- findout a specific site cookies and modify/create it with a value provided by user (combo box)
+- find out a specific site cookies and modify/create it with a value provided by user (combo box)
 - find out the tab with a specific URL (the mocked application) and refresh it
 - create an extension option to setup the gitlab personal token
 - checkout a specific file from gitlab
