@@ -41,3 +41,27 @@ To allow the user to setup his/her gitlab personal token the best way of doing t
 ## How to use an js library using ES 6 module
 
 ## How to debug a chrome extension
+
+It is a given the fact that there a quite many moments when an application doesn't work the way we like.
+In this moments it is important to now how to debug the extension.
+
+### Print information to the console
+
+The first and most straightforward way of doing this is to see log the information in the chrome console.
+But unfortunately this doesn't work the way we know when developing web application.
+
+### <span style='color:blue'>Developer tool for the backgroung page.
+
+The entry point of extension is backgroung page. So there are many times we want to inspect it. In order to do this we need to:
+
+1. go to `chrome://extensions`
+
+![extension panel|427 × 246,50%](./images/chrome_extensions/extension_panel.png "extension panel")
+
+1. in the extension panel click on the background page
+   Having developer tools open we can inspect any elements related to the background script.
+   Any console.log in the background script are displayed in developer tools console
+
+<span style='color:red'>image 1 (chrome extensions - extension panel)
+
+<span style='color:red'>image 1 (chrome extensions - developer tools)
