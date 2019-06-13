@@ -1,4 +1,4 @@
-# Chrome extension
+# **Chrome extension**
 
 ---
 
@@ -21,15 +21,15 @@ I will explain, gradually, in this chapter how to create a chrome extension from
 
 Another important aspect that I'm going to talk about is debugging a chrome extension
 
-## Hello chrome extension world application
+## <span style='color:#61AEEE'>**Hello chrome extension world application**
 
-## How to structure the extension
+## <span style='color:#61AEEE'>**How to structure the extension**
 
-## Create/update a site cookie
+## <span style='color:#61AEEE'>**Create/update a site cookie**
 
-## Find out a tab, make it current and refresh it
+## <span style='color:#61AEEE'>**Find out a tab, make it current and refresh it**
 
-## Create a chrome option
+## <span style='color:#61AEEE'>**Create a chrome option**
 
 For this extension it is required to fetch a file from gitlab. In order to use the gitlab REST API the Gitlab personal token is require.
 See [here](htttp://todo.com) <span style='color:red'>how to generate the gitlab personal token</span>
@@ -38,30 +38,30 @@ To allow the user to setup his/her gitlab personal token the best way of doing t
 
 ## Store/retrieve information to/from <span style='color:red'>sync store</span>
 
-## How to use an js library using ES 6 module
+## <span style='color:#61AEEE'>**How to use an js library using ES 6 module**
 
-## How to debug a chrome extension
+## <span style='color:#61AEEE'>**How to debug a chrome extension**
 
 It is a given the fact that there a quite many moments when an application doesn't work the way we like.
 In this moments it is important to now how to debug the extension.
 
-### Print information to the console
+### <span style='color:#61AEEE'>**Print information to the console**
 
 The first and most straightforward way of doing this is to see log the information in the chrome console.
 But unfortunately this doesn't work the way we know when developing web application.
 
-### <span style='color:blue'>Developer tool for the backgroung page.
+### <span style='color:#61AEEE'>**Developer tool for the backgroung page**
 
 The entry point of extension is backgroung page. So there are many times we want to inspect it. In order to do this we need to:
 
-1. go to `chrome://extensions`
+- go to `chrome://extensions`
 
 ![extension panel|427 × 246,50%](./images/chrome_extensions/extension_panel.png "extension panel")
 
-1. in the extension panel click on the background page
-   Having developer tools open we can inspect any elements related to the background script.
-   Any console.log in the background script are displayed in developer tools console
+- in the extension panel click on the background page
+  Having developer tools open we can inspect any elements related to the background script.
+  Any console.log in the background script are displayed in developer tools console
 
-<span style='color:red'>image 1 (chrome extensions - extension panel)
+  <span style='color:red'>show the code in backgroung.js with console.log
 
-<span style='color:red'>image 1 (chrome extensions - developer tools)
+  <span style='color:red'>show the console in developer tools with the logged information
