@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>Hello for again from Vue world!!!</div>
+    <div>Hello for again mr. {{name}} from Vue world!!!</div>
     <div>Your age is {{age}}</div>
     <button v-on:click="incrementUp">Increment your age;)</button>
   </div>
@@ -8,7 +8,10 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "HelloAgain",
+  props: {
+    name: String
+  },
   data() {
     return {
       age: 0
@@ -29,5 +32,15 @@ div {
   text-align: center;
   color: tomato;
   margin-top: 10px;
+}
+button {
+  display: inline-block;
+  color: whitesmoke;
+  background: tomato;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
 }
 </style>
