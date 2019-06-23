@@ -2,16 +2,28 @@
 
 ---
 
-It is quite clear to the reader that I am new in this huge JS realm/galaxy.
-But it is clear that almost any developer heard these days about the Angular, React and (most recently) VueJS.
-I was not at all an exception, so one question that I asked myself
-\_Why did I decide to start learning VueJS considering Angular and React were on the marked for some time and became the most popular tools for developing SPA?\*
-The answer is straightforward.
-I joined the **One app 3 frameworks** Voxxed Days Bucharest Frontend 2019 workshop.
-The workshop was about written the same web applications in Angular, React and Vue.
+I heard many times a lot about these 3 frameworks :
+
+- Angular,
+- React,
+- VueJS (most recently),
+
+icluding tutorials, comparisons articles, examples.
+
+I must admit that Angular was the first king of the JS kingdom, but soon after it was time for React to reign. Most recently Vue is threatening the React's throne.
+
+So, for me it was obvious it wasn't gonna be an easy task to decide what framework out of 3 to start learning first.
+
+But, fortunately, I joined the **One app 3 frameworks** Voxxed Days Bucharest Frontend 2019 workshop.
+
+The workshop was about developing the same web applications in all 3 frameworks: Angular, React and Vue.
+
 The presenter who talked about the Vue started his presentation (more or less) with
-"I am mainly a BE developer and was looking for a simple web library/frontend for developing the web application. After looking getting my feet wet with all 3 popular frameworks it was clear to me it is Vue I have to go further with".
-I found myself in the same situation as VueJS presenter, and considering the explanations I was given by him about why did he consider VueJS as a best option for developing web, I decided to start learning Vue.
+
+> I am mainly a BE developer and was looking for a simple web library/frontend for developing the web application.
+> After getting my feet wet with all 3 popular frameworks it was clear to me it is Vue I have to go further with".
+
+I found myself in the same situation as VueJS presenter, and considering the explanations I was given by him about why did he consider VueJS as a best option for developing web, I decided to start learning Vue first.
 
 ## What is Vue?
 
@@ -22,12 +34,18 @@ As per Vue description on vue js home page, Vue is a
 - approachable,
 - versatile,
 - performant
+
   javascript framework.
-  It allows you to create a maintenable and testable web application.
-  Vue is a progressive javascript framework.
-  Vue is thought in such a way that it could be included in an existing framework bit by bit.
-  So you don't have to rewrite the entire application in one shot but you include vue progressively.
-  Moreover Vue allows to take a web application frontend and split it up in reusable components, each of them containing javascript, html and css needed to render that piece of the page.
+
+It allows you to create a maintenable and testable web application.
+
+Vue is a progressive javascript framework.
+
+Vue is thought in such a way that it could be included in an existing framework bit by bit.
+
+So you don't have to rewrite the entire application in one shot but you include vue progressively.
+
+Moreover Vue allows to take a web application frontend and split it up in reusable components, each of them containing javascript, html and css needed to render that piece of the page.
 
 _Another very important trait of Vue it's reactivity._
 Vue reactivity means that whenever the underlying data changes the UI rendering that piece of data changes as well to display the latest data value.
@@ -35,9 +53,13 @@ Vue reactivity means that whenever the underlying data changes the UI rendering 
 ## Hello world Vue web application
 
 The more professional way of starting a Vue application is by using vue cli.
+
 But this is not the recommended way when the trainee is not acquainted to javascript tooling (node, npm, babel, webpack...)
-Moreover the quick Vue guide also recommend to start learning Vue without generating it.
+
+Moreover the official quick Vue guide also recommends to start learning Vue without generating it.
+
 Without further ado lets see how the most simple Vue application looks like.
+
 Basically it is all about having the following html file (index.html)
 
 ```html
