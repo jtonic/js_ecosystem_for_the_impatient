@@ -4,15 +4,13 @@
   </head>
 
   <body>
-    <div id="app">
-      {{ message }}
-    </div>
+    <div id="app">Hello {{ message }} world!!!</div>
 
     <script>
-      new Vue({
+      app = new Vue({
         el: "#app",
         data: {
-          message: "Hello VueJS world!!!"
+          message: "VueJS"
         }
       });
     </script>
