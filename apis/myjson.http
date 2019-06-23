@@ -1,0 +1,16 @@
+POST https://api.myjson.com/bins
+content-type: application/json
+
+{
+    "firstName": "Irina",
+    "lastName": "Stan",
+    "age": 29
+}
+
+###
+
+GET https://api.myjson.com/bins/progl
+
+###
+
+GET https://api.myjson.com/bins/i36r9
