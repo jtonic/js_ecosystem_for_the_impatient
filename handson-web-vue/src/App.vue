@@ -2,7 +2,9 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <hello-world msg="Welcome to Your from Vue.js App!!!"/>
-    <hello-again name="Antonel-Ernest Pazargic"/>
+    <button v-on:click="upByFive">Up by 5</button>
+    <span>{{counter}}</span>
+    <hello-again name="Antonel-Ernest Pazargic" v-bind:counterFromParent="counter"/>
   </div>
 </template>
 
@@ -15,6 +17,16 @@ export default {
   components: {
     HelloWorld,
     HelloAgain
+  },
+  data() {
+    return {
+      counter: 0
+    };
+  },
+  methods: {
+    upByFive: function() {
+      this.counter += 5;
+    }
   }
 };
 </script>
@@ -26,6 +38,20 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin-top: 10px;
+}
+button {
+  display: inline-block;
+  color: black;
+  background: burlywood;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+span {
+  display: block;
   margin-top: 10px;
 }
 </style>

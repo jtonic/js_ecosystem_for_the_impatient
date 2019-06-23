@@ -2,6 +2,7 @@
   <div>
     <div>Hello for again mr. {{name}} from Vue world!!!</div>
     <div>Your age is {{age}}</div>
+    <div>Your age incremented by parent {{age + counterFromParent}}</div>
     <button v-on:click="incrementUp">Increment your age;)</button>
   </div>
 </template>
@@ -10,7 +11,8 @@
 export default {
   name: "HelloAgain",
   props: {
-    name: String
+    name: String,
+    counterFromParent: Number
   },
   data() {
     return {
