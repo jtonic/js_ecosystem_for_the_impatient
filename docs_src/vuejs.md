@@ -1,4 +1,4 @@
-# VueJS
+# <span style='color:#61AEEE'> VueJS
 
 ---
 
@@ -25,7 +25,7 @@ The presenter who talked about the Vue started his presentation (more or less) w
 
 I found myself in the same situation as VueJS presenter, and considering the explanations I was given by him about why did he consider VueJS as a best option for developing web, I decided to start learning Vue first.
 
-## What is Vue?
+## <span style='color:#61AEEE'> What is Vue?
 
 Vue was created by **Even You**.
 
@@ -50,7 +50,7 @@ Moreover Vue allows to take a web application frontend and split it up in reusab
 _Another very important trait of Vue it's reactivity._
 Vue reactivity means that whenever the underlying data changes the UI rendering that piece of data changes as well to display the latest data value.
 
-## Hello world Vue web application
+## <span style='color:#61AEEE'> Hello world Vue web application
 
 The more professional way of starting a Vue application is by using vue cli.
 
@@ -113,28 +113,47 @@ then press ENTER.
 The change is reflected in the application as pe the image bellow.
 ![After data modification](./images/vuejs/after_data_modification.png)
 
-## The main elements of a Vue application
+## <span style='color:#61AEEE'> The main moving parts a Vue application consists of
 
 - directives and modifiers
 - filters
 - lifecycle hooks
 - mixins
 - whatchers and computed properties
--
 
-## Passing data from parent component to child component
+## <span style='color:#61AEEE'> Passing data from parent component to child component
 
-## Generating (scaffolding) a Vue web application with command-line interface (Vue-cli)
+## <span style='color:#61AEEE'> Vue component/application lifecycle hooks
 
-## State management (Vuex)
+## <span style='color:#61AEEE'> Generating a Vue application with vue-cli 3
 
-## Routing (Vue-Router)
+**What is a single file Vue components?**
 
-## Creating and publishing on npm ... of a custom vue component
+The professional way of creating a vue application is by Generating (scaffolding) it with the command-line interface (vue-cli)
 
-## Debugging a Vue application
+The single file containing httml, javascript and css has the extension .vue.
 
-## An example application
+**Notes:**
+
+> For those who likes having the httml, css and javascript in a separate files Vue offers this by allowing to include the references to these files in the \*.vue file. See the example below.
+
+```html
+<template src="./footer.component.html"></template>
+<script src="./footer.component.js"></script>
+<style src="./footer.component.scss" scoped lang="scss"></style>
+```
+
+[More about single file view components](https://vuejs.org/v2/guide/single-file-components.html)
+
+## <span style='color:#61AEEE'> State management with Vuex
+
+## <span style='color:#61AEEE'> Routing (Vue-Router)
+
+## <span style='color:#61AEEE'> Creating and publishing on npm ... of a custom vue component
+
+## <span style='color:#61AEEE'> Debugging a Vue application
+
+## <span style='color:#61AEEE'> An example application
 
 The application would use some VueJS components to:
 
@@ -146,4 +165,4 @@ The application would use some VueJS components to:
   - add/edit/delete/mark complete a TODO task
   - due time for the task
 
-## Further readings
+## <span style='color:#61AEEE'> Further readings
