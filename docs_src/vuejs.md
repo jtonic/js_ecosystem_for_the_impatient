@@ -145,7 +145,91 @@ The single file containing httml, javascript and css has the extension .vue.
 
 [More about single file view components](https://vuejs.org/v2/guide/single-file-components.html)
 
-## <span style='color:#61AEEE'> State management with Vuex
+## <span style='color:magenta'> State management with Vuex
+
+How to declare state?
+
+Vuex is a vue plugins. We have to do the following to setup it in a vue application:
+
+1. fetch the plugin from npm registry
+
+   `npm i --save vuex`
+
+2. import the vuex module
+
+   `import Vuex from "vuex";`
+
+3. set it up
+
+
+    `Vue.use(Vuex);`
+
+4.  create a store
+
+    ```javascript
+    const store = new Vuex.Store({
+      state: { ... }
+    });
+    ```
+
+5.  reference the store in the new Vue instance
+
+    ```javascript
+    new Vue({
+      render: h => h(App),
+      store
+    }).$mount("#app");
+    ```
+
+**See below the full example:**
+
+```javascript
+import Vue from "vue";
+import Vuex from "vuex";
+import App from "./app/App.vue";
+
+Vue.config.productionTip = false;
+
+Vue.use(Vuex);
+
+const store = new Vuex.Store({
+  state: {
+    message: "VueJS"
+  },
+  getters: {
+    message(state) {
+      return state.message;
+    }
+  },
+  mutations: {
+    changeMessage(state, payload) {
+      state.message = payload;
+    }
+  },
+  actions: {
+    changeMessageAction(state, payload) {
+      state.commit("changeMessage", payload);
+    }
+  }
+});
+
+new Vue({
+  render: h => h(App),
+  store
+}).$mount("#app");
+```
+
+**How to reference state from a component computed property?**
+
+Considering the store declaration above the `message` state property from the store can be referenced in a component computed property like:
+
+```javascript
+computed: {
+  message() {
+    return this.$store.state.message;
+  }
+}
+```
 
 ## <span style='color:#61AEEE'> Routing (Vue-Router)
 

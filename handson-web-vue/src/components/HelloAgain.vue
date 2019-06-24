@@ -1,6 +1,7 @@
 <template>
   <div>
     <div>Hello for again mr. {{name}} from Vue world!!!</div>
+    <div>Message from store is {{message}}!!!</div>
     <div>Your age is {{age}}</div>
     <div>Your age incremented by parent {{age + counterFromParent}}</div>
     <button v-on:click="incrementUp">Increment your age;)</button>
@@ -22,6 +23,11 @@ export default {
   methods: {
     incrementUp: function() {
       this.age++;
+    }
+  },
+  computed: {
+    message() {
+      return this.$store.state.message;
     }
   }
 };
