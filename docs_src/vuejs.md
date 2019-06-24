@@ -250,3 +250,5 @@ The application would use some VueJS components to:
   - due time for the task
 
 ## <span style='color:#61AEEE'> Further readings
+
+tbd
