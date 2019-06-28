@@ -168,13 +168,15 @@ On my machine the outcome of the command is `3.8.4`
 </template>
 ```
 
-- \*run the command:
+- run the command:
 
 ```sh
 $ vue serve -o
 ```
 
-This starts a development server and install (serve) the App.vue vuejs application.
+This starts a development server and install (serve) the App.vue vuejs application and (because of `-o` command argument) opens the default browser pointing to `http://localhost:8080`.
+
+If all goes fine the Hello message is displayed in browser.
 
 ![Run vue serve](./images/vuejs/instant_prototyping_with_vue_cli.png)
 
