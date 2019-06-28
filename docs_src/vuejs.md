@@ -127,6 +127,63 @@ The change is reflected in the application as pe the image bellow.
 
 ## <span style='color:#61AEEE'> Generating a Vue application with vue-cli 3
 
+Vue cli is a professional project generator for VueJS.
+It allows the generation of a project that:
+
+- could be a instant prototype
+- allows fully customisation
+- <span style="color:red"> further info
+
+It also allow simple prototyping.
+The only packages needed to be installed (globally are) for protoptyping are:
+
+- @vue/cli
+- @vue/cli-service-global
+
+How to prototype a vue application?
+
+- Install the aforementioned packages globally with the following commands:
+
+```sh
+$ npm install -g @vue/cli
+$ npm install -g @vue/cli-service-global
+```
+
+- Check the installation:
+
+```sh
+$ vue --version
+```
+
+On my machine the outcome of the command is `3.8.4`
+**Note:**
+
+> The required vue cli version is 3.x
+
+- Create a file `App.vue`
+
+```html
+<template>
+  <h1>Hello!</h1>
+</template>
+```
+
+- \*run the command:
+
+```sh
+$ vue serve -o
+```
+
+This starts a development server and install (serve) the App.vue vuejs application.
+
+![Run vue serve](./images/vuejs/instant_prototyping_with_vue_cli.png)
+
+Note:
+
+> In case the cli-service-global not installed globally a warn is issued when run `vue serve`
+
+> `Command vue serve requires a global addon to be installed. Please run npm install -g @vue/cli-service-global and try again.`
+
 **What is a single file Vue components?**
 
 The professional way of creating a vue application is by Generating (scaffolding) it with the command-line interface (vue-cli)
@@ -251,4 +308,12 @@ The application would use some VueJS components to:
 
 ## <span style='color:#61AEEE'> Further readings
 
-tbd
+[Vue official documentation](https://vuejs.org/v2/guide/)
+
+[VueX](https://vuex.vuejs.org/guide/)
+
+[NuxtJS](https://nuxtjs.org/guide/installation)
+
+[Vue CLI](https://cli.vuejs.org/guide/prototyping.html)
+
+[Vue.js Quick Start Guide - Packt](https://subscription.packtpub.com/book/application_development/9781789344103)
