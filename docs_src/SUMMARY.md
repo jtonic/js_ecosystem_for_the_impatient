@@ -16,8 +16,9 @@
 - [Backend](be.md)
   - [NodeJS](node.md)<!--  -->
   - [ExpressJS](expressjs.md)
-- [Web applications - FE/browser side](web_applications.md)
+- [User interface](user_inteface.md)
   - [VueJS](vuejs.md)
+    - [Generating a Vue application with vue-cli 3](vue_cli.md)
   - [ReactJS](reactjs.md)
   - [Web components](wc.md)
   - [Polymer](polymer.md)
