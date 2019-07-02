@@ -16,6 +16,7 @@ It allows:
 **Notes:**
 
 > Vue CLI requires Node.js version 8.9 or above (8.11.0+ recommended)
+
 > In this material I am going to use vue cli version is 3.x
 
 ## <span style='color:#61AEEE'>Instant prototyping
