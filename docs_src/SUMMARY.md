@@ -19,6 +19,7 @@
 - [User interface](user_inteface.md)
   - [VueJS](vuejs.md)
     - [Generating a Vue application with vue-cli 3](vue_cli.md)
+    - [Desktop application with electron and vue](vue_electron.md)
   - [ReactJS](reactjs.md)
   - [Web components](wc.md)
   - [Polymer](polymer.md)
