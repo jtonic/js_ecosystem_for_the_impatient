@@ -30,7 +30,8 @@ function createWindow () {
     width: 1000,
     webPreferences: {
       nativeWindowOpen: true
-    }
+    },
+    titleBarStyle: 'hidden'
   })
 
   mainWindow.once('ready-to-show', () => {
@@ -55,6 +56,7 @@ function createWindow () {
   // )
 
   mainWindow.loadURL(winURL)
+  require('devtron').install()
 
   mainWindow.on('closed', () => {
     mainWindow = null

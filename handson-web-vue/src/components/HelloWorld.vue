@@ -3,7 +3,7 @@
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,
-      <br>check out the
+      <br />check out the
       <a
         href="https://cli.vuejs.org"
         target="_blank"
@@ -68,6 +68,13 @@
       </li>
       <li>
         <a href="https://vuejsexamples.com" target="_blank" rel="noopener noreferrer">VueJS examples</a>
+      </li>
+      <li>
+        <a
+          href="https://vuetifyjs.com/en/getting-started/quick-start"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Vuetify</a>
       </li>
     </ul>
   </div>

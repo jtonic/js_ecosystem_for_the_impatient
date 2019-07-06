@@ -2,6 +2,14 @@
 
 ---
 
+<span style="color:red">
+<h3>What else to do in this chapter:</h3>
+
+- vue material components with Vuetify (a special chapter)
+- <pre>vue.cli add</pre> (see how vuetify can be added to a vue-cli 3 generated project)
+
+</span>
+
 I heard many times a lot about these 3 frameworks :
 
 - Angular,
