@@ -17,15 +17,26 @@ class MyComponent extends LitElement {
   render() {
     return html`
       <p>${this.message} ${this.name}!!!</p>
-      <p>Your name reversed is ${this.reversedName(this.name)}</p>
+      <p>Your name reversed is ${this._reversedName(this.name)}</p>
+      <fieldset>
+        <legend>Data</legend>
+        <label for="fName">Your name:</label>
+          <input type="text" name="fName" id="fName" /> </label
+        ><button @click="${this._changeName}">Change name</button>
+      </fieldset>
     `;
   }
 
-  reversedName(name) {
+  _reversedName(name) {
     return name
       .split("")
       .reverse()
       .join("");
+  }
+
+  _changeName() {
+    console.log("name changed");
+    this.name = "Irinel";
   }
 }
 
