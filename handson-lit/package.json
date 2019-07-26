@@ -1,0 +1,20 @@
+{
+  "name": "handson-lit",
+  "version": "0.1.0",
+  "description": "",
+  "main": "my-component.js",
+  "scripts": {
+    "start": "es-dev-server --node-resolve --watch --open",
+    "start:compatibility": "es-dev-server --compatibility all --node-resolve --watch --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Antonel-Ernest Pazargic <antonel-pazargic@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.8.1"
+  }
+}
