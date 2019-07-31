@@ -1,5 +1,6 @@
 # Summary
 
+- [Status](status.md)
 - [Disclosure](disclosure.md)
 - [Introduction](README.md)
 - [History](history.md)
