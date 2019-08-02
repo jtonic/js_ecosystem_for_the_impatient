@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "author": "Antonel-Ernest Pazargic <antonel.pazargic@gmail.com>",
   "description": "A VueJS Electron desktop application",
-  "license": null,
+  "license": "MIT",
   "main": "./dist/electron/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtonic/js_ecosystem_for_the_impatient"
+  },
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
     "build:dir": "node .electron-vue/build.js && electron-builder --dir",
