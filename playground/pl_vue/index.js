@@ -13,7 +13,10 @@ let vue = new Vue({
   }
 });
 
-console.log(`vue data.message: ${vue.message}`);
+console.log(`[1] vue data.message: ${vue.message}`);
+
+console.log(`[2] vue data.message: ${vue.$data.message}`);
+
 setTimeout(() => {
   vue.message = "Hello Mr. Vue.JS!!!";
 }, 5000);
