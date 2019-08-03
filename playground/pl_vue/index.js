@@ -1,3 +1,18 @@
+const store = new Vuex.Store({
+  state: {
+    message: "hello"
+  },
+  mutations: {
+    changeMessage(state) {
+      state.message = "bye";
+    }
+  }
+});
+
+console.log(store.state.message);
+store.commit("changeMessage");
+console.log(store.state.message);
+
 let vue = new Vue({
   el: "#app",
   data() {
