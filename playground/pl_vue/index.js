@@ -9,29 +9,22 @@ const store = new Vuex.Store({
   }
 });
 
-console.log(store.state.message);
-store.commit("changeMessage");
-console.log(store.state.message);
-
 let vue = new Vue({
   el: "#app",
-  data() {
-    return {
-      message: "Hello Vue.JS world!!!"
-    };
-  },
   template: "<h2>{{ message }}</h2>",
-  methods: {
-    changeMessage() {
-      this.data.message = "Hello Mr. Vue.JS";
+  computed: {
+    message() {
+      return store.state.message;
     }
   }
 });
 
-console.log(`[1] vue data.message: ${vue.message}`);
-
-console.log(`[2] vue data.message: ${vue.$data.message}`);
+console.log(`[1] vue vue.message: ${vue.message}`);
+console.log(`[2] vue vue.data.message: ${vue.$data.message}`);
+console.log(`[3] vue store.state.message: ${store.state.message}`);
 
 setTimeout(() => {
-  vue.message = "Hello Mr. Vue.JS!!!";
-}, 5000);
+  console.log("After 4 seconds...");
+  store.commit("changeMessage");
+  console.log(`[4] vue store.state.message: ${store.state.message}`);
+}, 4000);
