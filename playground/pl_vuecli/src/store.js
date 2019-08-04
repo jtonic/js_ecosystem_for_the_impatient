@@ -8,11 +8,12 @@ export default new Vuex.Store({
     message: 'Hello vue.js app!!!',
   },
   getters: {
-    defaultIfEmptyMessage: state =>
-      state.message.lenght === 0 ? 'No message' : state.message,
+    defaultIfEmptyMessage(state) {
+      return state.message.length === 0 ? '<empty>' : state.message
+    },
   },
   mutations: {
-    modifyMessage(state, newMessage) {
+    updateMessage(state, newMessage) {
       state.message = newMessage
     },
   },

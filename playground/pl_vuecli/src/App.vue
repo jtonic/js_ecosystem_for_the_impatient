@@ -1,26 +1,37 @@
 <template>
-  <div id="app">{{ message }}</div>
+  <div id="app">
+    <h2>{{ defaultIfEmptyMessage }}</h2>
+    <input v-model="message" />
+    <!-- <button @click="updateMessage">Modify the message</button> -->
+  </div>
 </template>
 
 <script>
 import store from './store.js'
-import { mapGetters } from 'vuex'
+import { mapState, mapGetters, mapMutations } from 'vuex'
 
 export default {
   name: 'app',
   computed: {
-    ...mapGetters({
-      defaultIfEmptyMessage: state => state.getters.defaultIfEmptyMessage,
-      message: 'defaultIfEmptyMessage',
-    }),
-  },
+    message: {
+      get() {
+        return this.$store.state.message
+      },
+      set(value) {
+        this.$store.commit('updateMessage', value)
+      },
+    },
+    ...mapGetters(['defaultIfEmptyMessage']),
+  } /* ,
+  methods: mapMutations(['updateMessage']), */,
 }
 
-setInterval(() => {
+/* setInterval(() => {
   let date = new Date()
   let msg = `Hello vue.js app, at ${date.getMinutes()}:${date.getSeconds()}!!!`
-  store.commit('modifyMessage', msg)
+  store.commit('updateMessage', msg)
 }, 3000)
+ */
 </script>
 
 <style>
