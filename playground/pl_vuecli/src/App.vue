@@ -18,7 +18,8 @@ export default {
 
 setInterval(() => {
   let date = new Date()
-  store.state.message = `Hello vue.js app, at ${date.getMinutes()}:${date.getSeconds()}!!!`
+  let msg = `Hello vue.js app, at ${date.getMinutes()}:${date.getSeconds()}!!!`
+  store.commit('modifyMessage', msg)
 }, 3000)
 </script>
 
