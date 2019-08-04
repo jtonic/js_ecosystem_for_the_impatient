@@ -4,19 +4,22 @@
 
 <script>
 import store from './store.js'
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'app',
   computed: {
-    message() {
-      return store.state.message
-    },
+    ...mapGetters({
+      defaultIfEmptyMessage: state => state.getters.defaultIfEmptyMessage,
+      message: 'defaultIfEmptyMessage',
+    }),
   },
 }
 
-setTimeout(() => {
-  store.state.message = 'Hello vue.js app, even after 5 seconds!!!'
-}, 5000)
+setInterval(() => {
+  let date = new Date()
+  store.state.message = `Hello vue.js app, at ${date.getMinutes()}:${date.getSeconds()}!!!`
+}, 3000)
 </script>
 
 <style>

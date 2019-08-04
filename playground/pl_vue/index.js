@@ -12,11 +12,8 @@ const store = new Vuex.Store({
 let vue = new Vue({
   el: "#app",
   template: "<h2>{{ message }}</h2>",
-  computed: {
-    message() {
-      return store.state.message;
-    }
-  }
+  store,
+  computed: mapState(["message"])
 });
 
 console.log(`[1] vue vue.message: ${vue.message}`);
