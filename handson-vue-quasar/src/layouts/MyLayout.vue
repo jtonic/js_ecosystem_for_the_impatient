@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar>
+      <q-toolbar v-bind:style="{ 'background-color': color }">
         <q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu">
           <q-icon name="menu" />
         </q-btn>
@@ -80,6 +80,7 @@
 
 <script>
 import { openURL } from "quasar";
+import store from "../store/store.js";
 
 export default {
   name: "MyLayout",
@@ -87,6 +88,13 @@ export default {
     return {
       leftDrawerOpen: this.$q.platform.is.desktop
     };
+  },
+  computed: {
+    color: {
+      get() {
+        return store.getters.getColor;
+      }
+    }
   },
   methods: {
     openURL
