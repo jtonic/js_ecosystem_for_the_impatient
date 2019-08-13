@@ -3,7 +3,8 @@
     <h2>{{ defaultIfEmptyMessage }}</h2>
     <input v-model="message" />
     <router-link to="/">Home</router-link>
-    <!-- <router-link to="/bar">Go to Bar</router-link> -->
+    <router-link to="/greeting">Greeting</router-link>
+    <router-link to="/users">Users</router-link>
     <router-view />
     <!-- <button @click="updateMessage">Modify the message</button> -->
   </div>
@@ -24,16 +25,8 @@ export default {
       },
     },
     ...mapGetters(['defaultIfEmptyMessage']),
-  } /* ,
-  methods: mapMutations(['updateMessage']), */,
+  },
 }
-
-/* setInterval(() => {
-  let date = new Date()
-  let msg = `Hello vue.js app, at ${date.getMinutes()}:${date.getSeconds()}!!!`
-  store.commit('updateMessage', msg)
-}, 3000)
- */
 </script>
 
 <style>
