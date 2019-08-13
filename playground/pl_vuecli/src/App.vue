@@ -2,13 +2,15 @@
   <div id="app">
     <h2>{{ defaultIfEmptyMessage }}</h2>
     <input v-model="message" />
+    <router-link to="/">Home</router-link>
+    <!-- <router-link to="/bar">Go to Bar</router-link> -->
+    <router-view />
     <!-- <button @click="updateMessage">Modify the message</button> -->
   </div>
 </template>
 
 <script>
-import store from './store.js'
-import { mapState, mapGetters, mapMutations } from 'vuex'
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'app',
