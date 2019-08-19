@@ -13,9 +13,13 @@ export default [
     component: Greeting,
   },
   {
-    path: '/users',
-    name: 'users',
+    path: '/users/:id',
+    name: 'user',
     component: Users,
+  },
+  {
+    path: '/users',
+    redirect: '/users/1',
   },
   {
     path: '*',
