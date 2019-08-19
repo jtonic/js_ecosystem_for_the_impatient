@@ -1,5 +1,6 @@
 import Greeting from '@/components/Greeting'
 import Users from '@/components/Users'
+import NotFound from '@/components/NotFound'
 
 export default [
   {
@@ -15,5 +16,10 @@ export default [
     path: '/users',
     name: 'users',
     component: Users,
+  },
+  {
+    path: '*',
+    name: 'notFound',
+    component: NotFound,
   },
 ]
