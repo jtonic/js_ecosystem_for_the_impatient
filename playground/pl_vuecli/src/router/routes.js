@@ -1,5 +1,5 @@
-import Greeting from './components/Greeting'
-import Users from './components/Users'
+import Greeting from '@/components/Greeting'
+import Users from '@/components/Users'
 
 export default [
   {

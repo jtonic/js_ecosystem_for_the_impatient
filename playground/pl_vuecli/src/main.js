@@ -1,16 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Router from 'vue-router'
 import store from './store'
-import routes from './routes'
+import router from './router'
 
 Vue.config.productionTip = false
-
-Vue.use(Router)
-
-const router = new Router({
-  routes: routes,
-})
 
 new Vue({
   store,
