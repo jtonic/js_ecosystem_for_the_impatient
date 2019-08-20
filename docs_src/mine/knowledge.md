@@ -18,18 +18,18 @@ $ curl -V
 curl --ssl
 ```
 
-# Node version manager `nvm`
+## <span style='color:magenta'>Node version manager `nvm`
 
 ---
 
-### See all available npm versions
+### <span style='color:cyan'> See all available npm versions
 
 ```
 $ nvm ls-remote
 $ nvm ls-remote --lts # to list all long time support node versions
 ```
 
-### See all installed versions
+## <span style='color:cyan'> See all installed versions
 
 ```
 $ nvm ls
@@ -45,13 +45,34 @@ $ nvm ls
 
 > nvm is smart enough to infer the required version if there is only one version matching the pattern (or in case of multiple matches the latest stable version is chosen). For instance, if there is only one version 8.x installed (v8.16.0) then we can use `nvm use 8`. On the other hand if you issue the command `8.9` then mvn figure out there is not version matching the pattern, and issue an warn and offers a suggestion to install the latest stable version matching the pattern.
 
-```
+### <span style='color:cyan'> Prompted to install a npm version when try to use it
+
+```bash
 $ nvm use 8.15                                                                               N/A: version "8.15 -> N/A" is not yet installed.
 You need to run "nvm install 8.15" to install it before using it.
 ```
 
-### Running a node application with a specific node version.
+## <span style='color:cyan'> Running a node application with a specific node version
 
 ```sh
 $ node run 8.16.0 MyApp.js
 ```
+
+## <span style='color:magenta'>Vue devtool chrome extension
+
+Vue devtool assign a global variable to each vue (root) instance and vue component, such as `$vm0`. One can use this variable to inspect its fields/methods.
+
+## <span style='color:magenta'>Vue.js
+
+### Common vue.js directives
+
+- `v-text`
+
+  Example: `<h2 v-text="users"></h2>`
+
+  **Warn**
+
+  - in v-text the mustache based expression cannot be used.
+    Example: `<h2 v-text="users list: {{ users }}"></h2>`
+
+-
