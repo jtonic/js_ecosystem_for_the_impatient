@@ -62,6 +62,8 @@ $ node run 8.16.0 MyApp.js
 
 Vue devtool assign a global variable to each vue (root) instance and vue component, such as `$vm0`. One can use this variable to inspect its fields/methods.
 
+One case when this global variable is useful is, for instance, when we want to trigger the beforeDestroy and destroyed lifecycle hooks. In this case `$vm0.$destroy()` function could be called from chrome devtool console.
+
 ## <span style='color:magenta'>Vue.js
 
 ### Common vue.js directives
