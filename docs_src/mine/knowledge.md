@@ -52,7 +52,7 @@ $ nvm use 8.15                                                                  
 You need to run "nvm install 8.15" to install it before using it.
 ```
 
-## <span style='color:cyan'> Running a node application with a specific node version
+### <span style='color:cyan'> Running a node application with a specific node version
 
 ```sh
 $ node run 8.16.0 MyApp.js
@@ -66,15 +66,35 @@ One case when this global variable is useful is, for instance, when we want to t
 
 ## <span style='color:magenta'>Vue.js
 
-### Common vue.js directives
+### <span style='color:cyan'>Common vue.js directives
 
 - `v-text`
 
   Example: `<h2 v-text="users"></h2>`
 
-  **Warn**
+* `v-show` - renders the html markup if, and only if, the specified condition evaluates to true
 
-  - in v-text the mustache based expression cannot be used.
-    Example: `<h2 v-text="users list: {{ users }}"></h2>`
+- `v-bind`
+- `v-on` ( or `@`) - bind a DOM markup event to a JS snippet
+- `v-html` - render as HTML - this has to be used very carefully
+-
+-
+
+<span style='color:red'>**Warns**
+
+- in v-text the mustache based expression cannot be used.
+  Example: `<h2 v-text="users list: {{ users }}"></h2>`
+- when exporting a vue.js component with export default data has to be a function not an object.
+
+```javascript
+    data() {
+        return {
+            product: {
+                id: 1,
+                name: 'robinson crusoe',
+            }
+        }
+    }
+```
 
 -

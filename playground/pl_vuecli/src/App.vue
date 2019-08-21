@@ -5,6 +5,7 @@
     <router-link to="/">Home</router-link>
     <router-link to="/greeting">Greeting</router-link>
     <router-link to="/users">Users</router-link>
+    <router-link to="/products">Products</router-link>
     <router-view />
     <!-- <button @click="updateMessage">Modify the message</button> -->
   </div>
