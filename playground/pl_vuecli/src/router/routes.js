@@ -2,11 +2,13 @@ import Greeting from '@/components/Greeting'
 import Users from '@/components/Users'
 import Products from '@/components/Products'
 import NotFound from '@/components/NotFound'
+import Home from '@/components/Home'
 
 export default [
   {
     path: '/',
-    redirect: '/greeting',
+    name: 'home',
+    component: Home,
   },
   {
     path: '/greeting',

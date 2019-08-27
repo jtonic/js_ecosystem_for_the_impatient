@@ -2,8 +2,10 @@
   <div>
     <h1 v-text="product.title"></h1>
     <h2 v-text="product.description"></h2>
-    <h3>Availability: {{product.availableInvetory}}</h3>
-    <button @click="addToChart" v-show="product.availableInvetory > 0">Add to chart</button>
+    <h3>Availability: {{ product.availableInvetory }}</h3>
+    <button @click="addToChart" v-show="product.availableInvetory > 0">
+      Add to chart
+    </button>
   </div>
 </template>
 
@@ -29,5 +31,4 @@ export default {
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
