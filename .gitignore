@@ -88,3 +88,5 @@ thumbs.db
 !.gitkeep
 .electron-vue
 
+# exclude .tmp folder
+.tmp

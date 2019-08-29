@@ -3,6 +3,7 @@ import Users from '@/components/Users'
 import Products from '@/components/Products'
 import NotFound from '@/components/NotFound'
 import Home from '@/components/Home'
+import Checkout from '@/components/Checkout'
 
 export default [
   {
@@ -28,6 +29,15 @@ export default [
   {
     path: '/users',
     redirect: '/users/1',
+  },
+  {
+    path: '/checkout',
+    redirect: '/checkout/1',
+  },
+  {
+    path: '/checkout/:id',
+    name: 'checkout',
+    component: Checkout,
   },
   {
     path: '*',
