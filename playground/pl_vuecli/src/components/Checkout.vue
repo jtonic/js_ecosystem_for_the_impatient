@@ -36,6 +36,13 @@
           v-model="checkoutInfo.gender.val"
         />
         <label for="female">Female</label>
+        <br />
+        <select name="county" id="county" v-model="checkoutInfo.county.val">
+          <option disabled value selected>State</option>
+          <option v-bind:value="checkoutInfo.county.counties.B">B</option>
+          <option v-bind:value="checkoutInfo.county.counties.BR">BR</option>
+          <option v-bind:value="checkoutInfo.county.counties.GL">GL</option>
+        </select>
       </fieldset>
     </form>
     <br />
@@ -45,6 +52,7 @@
             Last name:   {{checkoutInfo.lastName}}
             Gift:      {{checkoutInfo.gift.val}}
             Gender: {{checkoutInfo.gender.val}}
+            County: {{checkoutInfo.county.val}}
         </pre>
     </div>
   </div>
@@ -67,6 +75,14 @@ export default {
           val: 'Male',
           male: 'Male',
           female: 'Female',
+        },
+        county: {
+          val: '',
+          counties: {
+            GL: 'Galati',
+            BR: 'Braila',
+            B: 'Bucuresti',
+          },
         },
       },
     }
