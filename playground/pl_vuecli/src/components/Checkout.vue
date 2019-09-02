@@ -19,6 +19,23 @@
           v-bind:false-value="checkoutInfo.gift.notAsGift"
         />
         <label for="gift">Gift</label>
+        <br />
+        <input
+          type="radio"
+          name="male"
+          id="male"
+          v-bind:value="checkoutInfo.gender.male"
+          v-model="checkoutInfo.gender.val"
+        />
+        <label for="male">Male</label>
+        <input
+          type="radio"
+          name="female"
+          id="female"
+          v-bind:value="checkoutInfo.gender.female"
+          v-model="checkoutInfo.gender.val"
+        />
+        <label for="female">Female</label>
       </fieldset>
     </form>
     <br />
@@ -27,6 +44,7 @@
             First name:  {{checkoutInfo.firstName}}
             Last name:   {{checkoutInfo.lastName}}
             Gift:      {{checkoutInfo.gift.val}}
+            Gender: {{checkoutInfo.gender.val}}
         </pre>
     </div>
   </div>
@@ -44,6 +62,11 @@ export default {
           val: 'Send as a gift',
           asGift: 'Send as a gift',
           notAsGift: 'Not send as a gift',
+        },
+        gender: {
+          val: 'Male',
+          male: 'Male',
+          female: 'Female',
         },
       },
     }
