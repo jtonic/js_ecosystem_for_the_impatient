@@ -77,7 +77,7 @@ One case when this global variable is useful is, for instance, when we want to t
 - `v-bind`
 - `v-on` ( or `@`) - bind a DOM markup event to a JS snippet
 - `v-html` - render as HTML - this has to be used very carefully
-- v-if, v-if-else, v-else - conditionally add a markup to the DOM.
+- `v-if`, `v-if-else`, `v-else` - conditionally add a markup to the DOM.
 - `v-model` - two way databinding between view and model
 - `v-once` - the bind between the model and view is performed only once
 - `v-for` directive used to loop through items.
