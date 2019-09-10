@@ -49,7 +49,7 @@
     <div>
       <pre>
             First name:  {{checkoutInfo.firstName}}
-            Last name:   {{checkoutInfo.lastName}}
+            Last name:   {{ checkoutInfo.lastName }}
             Gift:      {{checkoutInfo.gift.val}}
             Gender: {{checkoutInfo.gender.val}}
             County: {{checkoutInfo.county.val}}
