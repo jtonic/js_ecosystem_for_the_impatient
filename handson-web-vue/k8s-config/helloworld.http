@@ -1,0 +1,2 @@
+curl -X GET \
+    http://adc68f28add1e11e9969002615e735ec-1747637858.eu-west-2.elb.amazonaws.com

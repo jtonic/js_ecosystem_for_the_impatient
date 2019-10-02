@@ -1,0 +1,28 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: helloworld-deployment
+  labels:
+    app: helloworld
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: helloworld
+    spec:
+      containers:
+        - name: helloworld
+          image: jtonic/my-vuejs-app:v1
+          resources:
+            requests:
+              cpu: 100m
+              memory: 300Mi
+            limits:
+              cpu: 2
+              memory: 500Mi
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          command: ["echo", "SUCCESS"]
