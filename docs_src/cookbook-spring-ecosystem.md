@@ -2,14 +2,15 @@
 
 - __Intent__
 
-  Spring boot devtools goal is to make the spring boot application more efficient.
-  It provides application reload, live reload, disable cache, remote reload and more.
+  Spring boot devtools goal is to make the spring boot application development more efficient.
+  It provides application reload, live reload, remote reload, disables cache and more.
 
   For me (as a daily backend developer) the most important feature of devtools is the spring application reload.
-  In fact devtools doesn't reload entire application context. It has 2 class loaders, one of them is the one responsible for loading the project classes and resources.
+  In fact devtools doesn't reload entire application context. It has 2 class loaders, one of them is the one responsible for loading the project classes and resources. This way the spring application reload is quicker.
 
   Enough with the theory and let's jump into the practical example.
-  For further information about the spring-boot devtools go to the [links below](useful-links).
+
+  For further information about the spring-boot devtools go to the [links below](#useful-links).
 
 - __Steps__
 
@@ -75,9 +76,9 @@
 
   ![Run spring boot application](./images/spring/../cookbook/spring/Run&#32;springboot&#32;application.png)
 
-  > When debugging application hot swap kick in. It it fails it falls back to update spring application based on trigger file
+  > When debugging application hot swap kicks in. If it fails it falls back to update spring application based on trigger file.
   >
-  > When running the application, and hot swap makes no sense the spring application gets reloaded based on
+  > When running the application and hot swap makes no sense the spring application gets reloaded based on trigger file.
 
   - Do some modification in the code (say rest controller java class)
 
@@ -93,7 +94,7 @@
 
 > Spring boot devtools have more more useful features for local and remote development.
 > Please be aware that that the spring-boot-devtools must not be included in the prod deliverable.
-> In case of `using the exploaded springboot application - folder structure`, very useful in case of docker/kubernetes cloud the `spring-boot-devtools` is included. In this case it has to be removed during the build.
+> In case of `using the exploded springboot application - folder structure`, very useful in case of docker/kubernetes cloud the `spring-boot-devtools` is included. In this case it has to be removed during the build.
 
 ### Useful links
 
