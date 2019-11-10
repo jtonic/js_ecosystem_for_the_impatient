@@ -39,7 +39,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - build the image
 
 ```
-docker build . -t my-vuejs-app
+docker build -t my-vuejs-app .
 ```
 
 - run the container for the image
