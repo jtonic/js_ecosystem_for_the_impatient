@@ -33,4 +33,5 @@
   - [JSDoc](jsdoc.md)
 - [HTTP](http.md)
 - [Cookbook](cookbook.md)
+  - [Spring ecosystem](cookbook-spring-ecosystem.md)
 - [Bibliography](bibliography.md)
