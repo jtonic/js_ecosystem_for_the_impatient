@@ -32,4 +32,5 @@
   - [ESLint](eslint.md)
   - [JSDoc](jsdoc.md)
 - [HTTP](http.md)
+- [Cookbook](cookbook.md)
 - [Bibliography](bibliography.md)
