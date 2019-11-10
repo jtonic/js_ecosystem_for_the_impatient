@@ -34,4 +34,5 @@
 - [HTTP](http.md)
 - [Cookbook](cookbook.md)
   - [Spring ecosystem](cookbook-spring-ecosystem.md)
+- [Architecture](architecture.md)
 - [Bibliography](bibliography.md)

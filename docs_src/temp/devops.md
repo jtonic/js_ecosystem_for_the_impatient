@@ -13,12 +13,21 @@
 ```sh
     brew cask install minikube
 ```
+> **Note:** The version v1.4.0 is used in all examples
 
 - run minikube
 
 ```sh
     minikube start
 ```
+> **Note:**: When the minikube is install a virtual machine is started and the current context of kubectl is minikube.
+> The current can be checked by checking `current-context` in `~/.kube/config`,
+> or by running `kubectl config get-contexts`
+
+
+- getting the info about the minikube cluster
+
+`kubectl cluster-info`
 
 - show minikube dashboard
 
