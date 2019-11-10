@@ -1,6 +1,4 @@
-# Spring ecosystem cookbook
-
-## How to streamline the springboot application development with spring-boot devtools (and IntelliJ Idea)
+## Streamline the springboot application development with spring-boot devtools
 
 - __Intent__
 
@@ -56,9 +54,46 @@
       lazy-initialization: true
   ```
 
-### How to make springboot devtools more pleasant with IntelliJ Idea?
+### Configure IntelliJ Idea spring application to use devtools
 
-  - tbd
+  IntelliJ Idea simplify further its integration with spring.
+  It is no longer needed to update and save the `.reloadtrigger` file. IntelliJ Idea do it for us.
+
+- __Steps:__
+
+  - create a spring application run configuration.
+  The easy way of doing this is to run the application using the red arrow in the editor gutter.
+
+  See ![Run spring app|427 × 246,50%](./images/cookbook/spring/run&#32;spring&#32;application.png "Run spring app")
+
+  - configure the update and frame deactivation actions.
+  The configuration should be as shown in the image below
+
+  ![Config run application](./images/cookbook/spring/run&#32;debug&#32;configuration.png)
+
+  - Run the application. I really like to use Services tool window.
+
+  ![Run spring boot application](./images/spring/../cookbook/spring/Run&#32;springboot&#32;application.png)
+
+  > When debugging application hot swap kick in. It it fails it falls back to update spring application based on trigger file
+  >
+  > When running the application, and hot swap makes no sense the spring application gets reloaded based on
+
+  - Do some modification in the code (say rest controller java class)
+
+  - Update spring boot application and keep an eye on the console to see how spring reload the changes in the application context
+
+  ![Reload spring boot application](./images/cookbook/spring/refresh&#32;application.png)
+
+  - See below how quick this whole spring context reload is
+  ![How quick the spring application reload is](./images/cookbook/spring/fast&#32;app&#32;reload.png)
+
+  > In IntelliJ Idea debug mode first how swap kick in. If it fails it falls back to update spring app using trigger file
+  > In run mode the spring app update based on trigger fires.
+
+> Spring boot devtools have more more useful features for local and remote development.
+> Please be aware that that the spring-boot-devtools must not be included in the prod deliverable.
+> In case of `using the exploaded springboot application - folder structure`, very useful in case of docker/kubernetes cloud the `spring-boot-devtools` is included. In this case it has to be removed during the build.
 
 ### Useful links
 
