@@ -1,0 +1,1005 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>VueJS · JS ecosystem for the impatient</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-block-align/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-smart-nav-collapse/smart-nav-collapse.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="vue_cli.html" />
+    
+    
+    <link rel="prev" href="user_inteface.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/jtonic/js_ecosystem_for_the_impatient/issues" target="_blank" class="custom-link">Contact us / Support</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="status.md">
+            
+                <span>
+            
+                    
+                    Status
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="disclosure.html">
+            
+                <a href="disclosure.html">
+            
+                    
+                    Disclosure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="history.html">
+            
+                <a href="history.html">
+            
+                    
+                    History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="languages.html">
+            
+                <a href="languages.html">
+            
+                    
+                    Languages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="es.html">
+            
+                <a href="es.html">
+            
+                    
+                    ECMAScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="ts.html">
+            
+                <a href="ts.html">
+            
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="chrome_extension.html">
+            
+                <a href="chrome_extension.html">
+            
+                    
+                    Chrome extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="tools.html">
+            
+                <a href="tools.html">
+            
+                    
+                    Tools
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="npm.html">
+            
+                <a href="npm.html">
+            
+                    
+                    Node package manager - npm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="npm-link.html">
+            
+                <a href="npm-link.html">
+            
+                    
+                    npm link
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="nvm.html">
+            
+                <a href="nvm.html">
+            
+                    
+                    Node Version Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="yo.html">
+            
+                <a href="yo.html">
+            
+                    
+                    Yeoman
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="code.html">
+            
+                <a href="code.html">
+            
+                    
+                    Visual Studio Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="be.html">
+            
+                <a href="be.html">
+            
+                    
+                    Backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="node.html">
+            
+                <a href="node.html">
+            
+                    
+                    NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="expressjs.html">
+            
+                <a href="expressjs.html">
+            
+                    
+                    ExpressJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="user_inteface.md">
+            
+                <span>
+            
+                    
+                    User interface
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.8.1" data-path="vuejs.html">
+            
+                <a href="vuejs.html">
+            
+                    
+                    VueJS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1" data-path="vue_cli.html">
+            
+                <a href="vue_cli.html">
+            
+                    
+                    Generating a Vue application with vue-cli 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2" data-path="vue_electron.html">
+            
+                <a href="vue_electron.html">
+            
+                    
+                    Desktop application with electron and vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="reactjs.html">
+            
+                <a href="reactjs.html">
+            
+                    
+                    ReactJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="wc.html">
+            
+                <a href="wc.html">
+            
+                    
+                    Web components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="polymer.html">
+            
+                <a href="polymer.html">
+            
+                    
+                    Polymer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="presentation.html">
+            
+                <a href="presentation.html">
+            
+                    
+                    Presentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="html.html">
+            
+                <a href="html.html">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="styling.html">
+            
+                <a href="styling.html">
+            
+                    
+                    Styling
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="css.html">
+            
+                <a href="css.html">
+            
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="code_quality.html">
+            
+                <a href="code_quality.html">
+            
+                    
+                    Code quality
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="eslint.html">
+            
+                <a href="eslint.html">
+            
+                    
+                    ESLint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="jsdoc.html">
+            
+                <a href="jsdoc.html">
+            
+                    
+                    JSDoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="http.html">
+            
+                <a href="http.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="cookbook.html">
+            
+                <a href="cookbook.html">
+            
+                    
+                    Cookbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="cookbook-spring-ecosystem.html">
+            
+                <a href="cookbook-spring-ecosystem.html">
+            
+                    
+                    Spring ecosystem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="format-code-idea.html">
+            
+                <a href="format-code-idea.html">
+            
+                    
+                    Format code in idea
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="architecture.html">
+            
+                <a href="architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="bibliography.html">
+            
+                <a href="bibliography.html">
+            
+                    
+                    Bibliography
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >VueJS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="vuejs"><span style="color:#61AEEE"> VueJS</span></h1>
+<hr>
+<p><span style="color:red"></span></p>
+<h3 id="what-else-to-do-in-this-chapter">What else to do in this chapter:</h3>
+
+<ul>
+<li>vue material components with Vuetify (a special chapter)</li>
+<li><pre>vue.cli add</pre> (see how vuetify can be added to a vue-cli 3 generated project)</li>
+</ul>
+<p>&lt;/span&gt;</p>
+<p>I heard many times a lot about these 3 frameworks :</p>
+<ul>
+<li>Angular,</li>
+<li>React,</li>
+<li>VueJS (most recently),</li>
+</ul>
+<p>icluding tutorials, comparisons articles, examples.</p>
+<p>I must admit that Angular was the first king of the JS kingdom, but soon after it was time for React to reign. Most recently Vue is threatening the React&apos;s throne.</p>
+<p>So, for me it was obvious it wasn&apos;t gonna be an easy task to decide what framework out of 3 to start learning first.</p>
+<p>But, fortunately, I joined the <strong>One app 3 frameworks</strong> Voxxed Days Bucharest Frontend 2019 workshop.</p>
+<p>The workshop was about developing the same web applications in all 3 frameworks: Angular, React and Vue.</p>
+<p>The presenter who talked about the Vue started his presentation (more or less) with</p>
+<blockquote>
+<p>I am mainly a BE developer and was looking for a simple web library/frontend for developing the web application.
+After getting my feet wet with all 3 popular frameworks it was clear to me it is Vue I have to go further with&quot;.</p>
+</blockquote>
+<p>I found myself in the same situation as VueJS presenter, and considering the explanations I was given by him about why did he consider VueJS as a best option for developing web, I decided to start learning Vue first.</p>
+<h2 id="what-is-vue"><span style="color:#61AEEE"> What is Vue?</span></h2>
+<p>Vue was created by <strong>Even You</strong>.</p>
+<p>As per Vue description on vue js home page, Vue is a</p>
+<ul>
+<li>approachable,</li>
+<li>versatile,</li>
+<li><p>performant</p>
+<p>javascript framework.</p>
+</li>
+</ul>
+<p>It allows you to create a maintenable and testable web application.</p>
+<p>Vue is a progressive javascript framework.</p>
+<p>Vue is thought in such a way that it could be included in an existing framework bit by bit.</p>
+<p>So you don&apos;t have to rewrite the entire application in one shot but you include vue progressively.</p>
+<p>Moreover Vue allows to take a web application frontend and split it up in reusable components, each of them containing javascript, html and css needed to render that piece of the page.</p>
+<p><em>Another very important trait of Vue it&apos;s reactivity.</em>
+Vue reactivity means that whenever the underlying data changes the UI rendering that piece of data changes as well to display the latest data value.</p>
+<h2 id="hello-world-vue-web-application"><span style="color:#61AEEE"> Hello world Vue web application</span></h2>
+<p>The more professional way of starting a Vue application is by using vue cli.</p>
+<p>But this is not the recommended way when the trainee is not acquainted to javascript tooling (node, npm, babel, webpack...)</p>
+<p>Moreover the official quick Vue guide also recommends to start learning Vue without generating it.</p>
+<p>Without further ado lets see how the most simple Vue application looks like.</p>
+<p>Basically it is all about having the following html file (index.html)</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>Hello {{ message }} world!!!<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+      app = <span class="hljs-keyword">new</span> Vue({
+        el: <span class="hljs-string">&quot;#app&quot;</span>,
+        data: {
+          message: <span class="hljs-string">&quot;VueJS&quot;</span>
+        }
+      });
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>Let&apos;s dissect a bit this file.</p>
+<ul>
+<li>first the UI element in which the vue component/application is redered in - <code>&lt;div id=&apos;app&apos;</code> =&gt; This div is chosen by vue by the <code>el</code> argument passed to the Vue</li>
+<li>secondly a new Vue application instance is created in a <code>&lt;script&gt;</code> html tag which has to be at the end of the html.</li>
+<li>there are 2 object arguments passed to the Vue constructor.<ul>
+<li>el =&gt; identifies the UI element where the Vue application/component is rendered in. <strong>This is mandatory</strong>.</li>
+<li>data =&gt; data that is rendered in the UI by the component/application.
+This is not mandatory.</li>
+</ul>
+</li>
+<li>templating -&gt; <code>`. This templating element is placed inside the div element. This is going to be replaced by the message property of the vue instance data.
+So, the end result, rendered in the browser is</code>Hello VueJS world!!!`</li>
+</ul>
+<p>As I said one of the major traits of Vue is <strong>reactivity</strong>, meaning that whenever the underlying data is changed the UI element is rerendered to reflect the change.</p>
+<p>So, in hello vue world example we can experiment this reactivity.</p>
+<p>Before:</p>
+<p><img src="images/vuejs/before_data_modification.png" alt="Before data&apos;message modification"></p>
+<p>Open the Google Chrome developer tools (console tab) and write:</p>
+<pre><code>app.message = &apos;magical Vue&apos;
+</code></pre><p>then press ENTER.</p>
+<p>The change is reflected in the application as pe the image bellow.
+<img src="images/vuejs/after_data_modification.png" alt="After data modification"></p>
+<h2 id="the-main-moving-parts-a-vue-application-consists-of"><span style="color:#61AEEE"> The main moving parts a Vue application consists of</span></h2>
+<ul>
+<li>directives and modifiers</li>
+<li>filters</li>
+<li>lifecycle hooks</li>
+<li>mixins</li>
+<li>whatchers and computed properties</li>
+</ul>
+<h2 id="passing-data-from-parent-component-to-child-component"><span style="color:#61AEEE"> Passing data from parent component to child component</span></h2>
+<h2 id="vue-componentapplication-lifecycle-hooks"><span style="color:#61AEEE"> Vue component/application lifecycle hooks</span></h2>
+<p><strong>What is a single file Vue components?</strong></p>
+<p>The professional way of creating a vue application is by Generating (scaffolding) it with the command-line interface (vue-cli)</p>
+<p>The single file containing httml, javascript and css has the extension .vue.</p>
+<p><strong>Notes:</strong></p>
+<blockquote>
+<p>For those who likes having the httml, css and javascript in a separate files Vue offers this by allowing to include the references to these files in the *.vue file. See the example below.</p>
+</blockquote>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;./footer.component.html&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;./footer.component.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;./footer.component.scss&quot;</span> <span class="hljs-attr">scoped</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;scss&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<p><a href="https://vuejs.org/v2/guide/single-file-components.html" target="_blank">More about single file view components</a></p>
+<h2 id="state-management-with-vuex"><span style="color:magenta"> State management with Vuex</span></h2>
+<p>How to declare state?</p>
+<p>Vuex is a vue plugins. We have to do the following to setup it in a vue application:</p>
+<ol>
+<li><p>fetch the plugin from npm registry</p>
+<p><code>npm i --save vuex</code></p>
+</li>
+<li><p>import the vuex module</p>
+<p><code>import Vuex from &quot;vuex&quot;;</code></p>
+</li>
+<li><p>set it up</p>
+</li>
+</ol>
+<pre><code>`Vue.use(Vuex);`
+</code></pre><ol>
+<li><p>create a store</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> store = <span class="hljs-keyword">new</span> Vuex.Store({
+  state: { ... }
+});
+</code></pre>
+</li>
+<li><p>reference the store in the new Vue instance</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> Vue({
+  render: h =&gt; h(App),
+  store
+}).$mount(<span class="hljs-string">&quot;#app&quot;</span>);
+</code></pre>
+</li>
+</ol>
+<p><strong>See below the full example:</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vue&quot;</span>;
+<span class="hljs-keyword">import</span> Vuex <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vuex&quot;</span>;
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./app/App.vue&quot;</span>;
+
+Vue.config.productionTip = <span class="hljs-literal">false</span>;
+
+Vue.use(Vuex);
+
+<span class="hljs-keyword">const</span> store = <span class="hljs-keyword">new</span> Vuex.Store({
+  state: {
+    message: <span class="hljs-string">&quot;VueJS&quot;</span>
+  },
+  getters: {
+    message(state) {
+      <span class="hljs-keyword">return</span> state.message;
+    }
+  },
+  mutations: {
+    changeMessage(state, payload) {
+      state.message = payload;
+    }
+  },
+  actions: {
+    changeMessageAction(state, payload) {
+      state.commit(<span class="hljs-string">&quot;changeMessage&quot;</span>, payload);
+    }
+  }
+});
+
+<span class="hljs-keyword">new</span> Vue({
+  render: h =&gt; h(App),
+  store
+}).$mount(<span class="hljs-string">&quot;#app&quot;</span>);
+</code></pre>
+<p><strong>How to reference state from a component computed property?</strong></p>
+<p>Considering the store declaration above the <code>message</code> state property from the store can be referenced in a component computed property like:</p>
+<pre><code class="lang-javascript">computed: {
+  message() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.$store.state.message;
+  }
+}
+</code></pre>
+<h2 id="routing-vue-router"><span style="color:#61AEEE"> Routing (Vue-Router)</span></h2>
+<h2 id="creating-and-publishing-on-npm--of-a-custom-vue-component"><span style="color:#61AEEE"> Creating and publishing on npm ... of a custom vue component</span></h2>
+<h2 id="debugging-a-vue-application"><span style="color:#61AEEE"> Debugging a Vue application</span></h2>
+<h2 id="an-example-application"><span style="color:#61AEEE"> An example application</span></h2>
+<p>The application would use some VueJS components to:</p>
+<ul>
+<li>home page</li>
+<li>authenticate (SSO with Github)</li>
+<li>authorize (OAuth2)</li>
+<li>TODO list<ul>
+<li>create/delete/edit a new TODO list</li>
+<li>add/edit/delete/mark complete a TODO task</li>
+<li>due time for the task</li>
+</ul>
+</li>
+</ul>
+<h2 id="further-readings"><span style="color:#61AEEE"> Further readings</span></h2>
+<p><a href="https://vuejs.org/v2/guide/" target="_blank">Vue official documentation</a></p>
+<p><a href="https://vuex.vuejs.org/guide/" target="_blank">VueX</a></p>
+<p><a href="https://nuxtjs.org/guide/installation" target="_blank">NuxtJS</a></p>
+<p><a href="https://cli.vuejs.org/guide/prototyping.html" target="_blank">Vue CLI</a></p>
+<p><a href="https://subscription.packtpub.com/book/application_development/9781789344103" target="_blank">Vue.js Quick Start Guide - Packt</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="user_inteface.md" class="navigation navigation-prev " aria-label="Previous page: User interface">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="vue_cli.html" class="navigation navigation-next " aria-label="Next page: Generating a Vue application with vue-cli 3">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"VueJS","level":"1.8.1","depth":2,"next":{"title":"Generating a Vue application with vue-cli 3","level":"1.8.1.1","depth":3,"path":"vue_cli.md","ref":"vue_cli.md","articles":[]},"previous":{"title":"User interface","level":"1.8","depth":1,"path":"user_inteface.md","ref":"user_inteface.md","articles":[{"title":"VueJS","level":"1.8.1","depth":2,"path":"vuejs.md","ref":"vuejs.md","articles":[{"title":"Generating a Vue application with vue-cli 3","level":"1.8.1.1","depth":3,"path":"vue_cli.md","ref":"vue_cli.md","articles":[]},{"title":"Desktop application with electron and vue","level":"1.8.1.2","depth":3,"path":"vue_electron.md","ref":"vue_electron.md","articles":[]}]},{"title":"ReactJS","level":"1.8.2","depth":2,"path":"reactjs.md","ref":"reactjs.md","articles":[]},{"title":"Web components","level":"1.8.3","depth":2,"path":"wc.md","ref":"wc.md","articles":[]},{"title":"Polymer","level":"1.8.4","depth":2,"path":"polymer.md","ref":"polymer.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["anchorjs","katex","block-align","flexible-alerts","creativecommons","fontsettings","smart-nav-collapse"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"block-align":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"family":"sans","size":2,"theme":"night"},"highlight":{},"creativecommons":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"smart-nav-collapse":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JS ecosystem for the impatient","links":{"sidebar":{"Contact us / Support":"https://github.com/jtonic/js_ecosystem_for_the_impatient/issues"}},"gitbook":"*"},"file":{"path":"vuejs.md","mtime":"2020-02-16T11:23:18.508Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-16T11:24:32.278Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-smart-nav-collapse/smart-nav-collapse.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

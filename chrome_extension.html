@@ -1,0 +1,847 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chrome extension · JS ecosystem for the impatient</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-block-align/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-smart-nav-collapse/smart-nav-collapse.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="tools.html" />
+    
+    
+    <link rel="prev" href="ts.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/jtonic/js_ecosystem_for_the_impatient/issues" target="_blank" class="custom-link">Contact us / Support</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="status.md">
+            
+                <span>
+            
+                    
+                    Status
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="disclosure.html">
+            
+                <a href="disclosure.html">
+            
+                    
+                    Disclosure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="history.html">
+            
+                <a href="history.html">
+            
+                    
+                    History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="languages.html">
+            
+                <a href="languages.html">
+            
+                    
+                    Languages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="es.html">
+            
+                <a href="es.html">
+            
+                    
+                    ECMAScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="ts.html">
+            
+                <a href="ts.html">
+            
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="chrome_extension.html">
+            
+                <a href="chrome_extension.html">
+            
+                    
+                    Chrome extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="tools.html">
+            
+                <a href="tools.html">
+            
+                    
+                    Tools
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="npm.html">
+            
+                <a href="npm.html">
+            
+                    
+                    Node package manager - npm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="npm-link.html">
+            
+                <a href="npm-link.html">
+            
+                    
+                    npm link
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="nvm.html">
+            
+                <a href="nvm.html">
+            
+                    
+                    Node Version Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="yo.html">
+            
+                <a href="yo.html">
+            
+                    
+                    Yeoman
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="code.html">
+            
+                <a href="code.html">
+            
+                    
+                    Visual Studio Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="be.html">
+            
+                <a href="be.html">
+            
+                    
+                    Backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="node.html">
+            
+                <a href="node.html">
+            
+                    
+                    NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="expressjs.html">
+            
+                <a href="expressjs.html">
+            
+                    
+                    ExpressJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="user_inteface.md">
+            
+                <span>
+            
+                    
+                    User interface
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="vuejs.html">
+            
+                <a href="vuejs.html">
+            
+                    
+                    VueJS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1" data-path="vue_cli.html">
+            
+                <a href="vue_cli.html">
+            
+                    
+                    Generating a Vue application with vue-cli 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2" data-path="vue_electron.html">
+            
+                <a href="vue_electron.html">
+            
+                    
+                    Desktop application with electron and vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="reactjs.html">
+            
+                <a href="reactjs.html">
+            
+                    
+                    ReactJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="wc.html">
+            
+                <a href="wc.html">
+            
+                    
+                    Web components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="polymer.html">
+            
+                <a href="polymer.html">
+            
+                    
+                    Polymer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="presentation.html">
+            
+                <a href="presentation.html">
+            
+                    
+                    Presentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="html.html">
+            
+                <a href="html.html">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="styling.html">
+            
+                <a href="styling.html">
+            
+                    
+                    Styling
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="css.html">
+            
+                <a href="css.html">
+            
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="code_quality.html">
+            
+                <a href="code_quality.html">
+            
+                    
+                    Code quality
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="eslint.html">
+            
+                <a href="eslint.html">
+            
+                    
+                    ESLint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="jsdoc.html">
+            
+                <a href="jsdoc.html">
+            
+                    
+                    JSDoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="http.html">
+            
+                <a href="http.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="cookbook.html">
+            
+                <a href="cookbook.html">
+            
+                    
+                    Cookbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="cookbook-spring-ecosystem.html">
+            
+                <a href="cookbook-spring-ecosystem.html">
+            
+                    
+                    Spring ecosystem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="format-code-idea.html">
+            
+                <a href="format-code-idea.html">
+            
+                    
+                    Format code in idea
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="architecture.html">
+            
+                <a href="architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="bibliography.html">
+            
+                <a href="bibliography.html">
+            
+                    
+                    Bibliography
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chrome extension</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chrome-extension"><strong>Chrome extension</strong></h1>
+<hr>
+<p>Recently I find out a place where Javascript is extremely useful as well. This is browser (chrome) extensions.
+The browser is the tool anyone of us is using most of the time.
+It became more and more performant and more and more complete.
+But, of course, it could lack the special functionality one can require.
+For me this was the case, I needed a special functionality - an extension to improve the polymer/web components mock based testing.
+I will explain, gradually, in this chapter how to create a chrome extension from hello chrome extension world to the mock-enhancer extension.</p>
+<p><strong>The requirements for the mock-enhancer chrome extension:</strong></p>
+<ul>
+<li>find out a specific site cookies and modify/create it with a value provided by user (combo box)</li>
+<li>find out the tab with a specific URL (the mocked application) and refresh it</li>
+<li>create an extension option to setup the gitlab personal token</li>
+<li>checkout a specific file from gitlab</li>
+<li>store and retrieve from <span style="color:red">sync store</span> the gitlab personal token</li>
+<li>(bonus) create a shortcut for the chrome extension popup</li>
+<li>(bonus) create a shortcut to duplicate the current tab</li>
+</ul>
+<p>Another important aspect that I&apos;m going to talk about is debugging a chrome extension</p>
+<h2 id="hello-chrome-extension-world-application"><span style="color:#61AEEE"><strong>Hello chrome extension world application</strong></span></h2>
+<h2 id="how-to-structure-the-extension"><span style="color:#61AEEE"><strong>How to structure the extension</strong></span></h2>
+<h2 id="createupdate-a-site-cookie"><span style="color:#61AEEE"><strong>Create/update a site cookie</strong></span></h2>
+<h2 id="find-out-a-tab-make-it-current-and-refresh-it"><span style="color:#61AEEE"><strong>Find out a tab, make it current and refresh it</strong></span></h2>
+<h2 id="create-a-chrome-option"><span style="color:#61AEEE"><strong>Create a chrome option</strong></span></h2>
+<p>For this extension it is required to fetch a file from gitlab. In order to use the gitlab REST API the Gitlab personal token is require.
+See <a href="htttp://todo.com" target="_blank">here</a> <span style="color:red">how to generate the gitlab personal token</span></p>
+<p>To allow the user to setup his/her gitlab personal token the best way of doing this is through <span style="color:red">continue from here</span></p>
+<h2 id="storeretrieve-information-tofrom-sync-store">Store/retrieve information to/from <span style="color:red">sync store</span></h2>
+<h2 id="how-to-use-an-js-library-using-es-6-module"><span style="color:#61AEEE"><strong>How to use an js library using ES 6 module</strong></span></h2>
+<h2 id="how-to-debug-a-chrome-extension"><span style="color:#61AEEE"><strong>How to debug a chrome extension</strong></span></h2>
+<p>It is a given the fact that there a quite many moments when an application doesn&apos;t work the way we like.
+In this moments it is important to now how to debug the extension.</p>
+<h3 id="print-information-to-the-console"><span style="color:#61AEEE"><strong>Print information to the console</strong></span></h3>
+<p>The first and most straightforward way of doing this is to see log the information in the chrome console.
+But unfortunately this doesn&apos;t work the way we know when developing web application.</p>
+<h3 id="developer-tool-for-the-backgroung-page"><span style="color:#61AEEE"><strong>Developer tool for the backgroung page</strong></span></h3>
+<p>The entry point of extension is backgroung page. So there are many times we want to inspect it. In order to do this we need to:</p>
+<ul>
+<li>go to <code>chrome://extensions</code></li>
+</ul>
+<p><img src="images/chrome_extensions/extension_panel.png" alt="extension panel|427&#x200A;&#xD7;&#x200A;246,50%" title="extension panel"></p>
+<ul>
+<li><p>in the extension panel click on the background page
+Having developer tools open we can inspect any elements related to the background script.
+Any console.log in the background script are displayed in developer tools console</p>
+<p><span style="color:red">show the code in backgroung.js with console.log</span></p>
+<p><span style="color:red">show the console in developer tools with the logged information</span></p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ts.html" class="navigation navigation-prev " aria-label="Previous page: TypeScript">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="tools.html" class="navigation navigation-next " aria-label="Next page: Tools">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chrome extension","level":"1.5.3","depth":2,"next":{"title":"Tools","level":"1.6","depth":1,"path":"tools.md","ref":"tools.md","articles":[{"title":"Node package manager - npm","level":"1.6.1","depth":2,"path":"npm.md","ref":"npm.md","articles":[{"title":"npm link","level":"1.6.1.1","depth":3,"path":"npm-link.md","ref":"npm-link.md","articles":[]},{"title":"Node Version Manager","level":"1.6.1.2","depth":3,"path":"nvm.md","ref":"nvm.md","articles":[]}]},{"title":"Yeoman","level":"1.6.2","depth":2,"path":"yo.md","ref":"yo.md","articles":[]},{"title":"Visual Studio Code","level":"1.6.3","depth":2,"path":"code.md","ref":"code.md","articles":[]}]},"previous":{"title":"TypeScript","level":"1.5.2","depth":2,"path":"ts.md","ref":"ts.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchorjs","katex","block-align","flexible-alerts","creativecommons","fontsettings","smart-nav-collapse"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"block-align":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"family":"sans","size":2,"theme":"night"},"highlight":{},"creativecommons":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"smart-nav-collapse":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JS ecosystem for the impatient","links":{"sidebar":{"Contact us / Support":"https://github.com/jtonic/js_ecosystem_for_the_impatient/issues"}},"gitbook":"*"},"file":{"path":"chrome_extension.md","mtime":"2020-02-16T11:23:18.496Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-16T11:24:32.278Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-smart-nav-collapse/smart-nav-collapse.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

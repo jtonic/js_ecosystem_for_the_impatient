@@ -1,0 +1,1282 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Node package manager - npm · JS ecosystem for the impatient</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-block-align/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-smart-nav-collapse/smart-nav-collapse.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="npm-link.html" />
+    
+    
+    <link rel="prev" href="tools.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/jtonic/js_ecosystem_for_the_impatient/issues" target="_blank" class="custom-link">Contact us / Support</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="status.md">
+            
+                <span>
+            
+                    
+                    Status
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="disclosure.html">
+            
+                <a href="disclosure.html">
+            
+                    
+                    Disclosure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="history.html">
+            
+                <a href="history.html">
+            
+                    
+                    History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="languages.html">
+            
+                <a href="languages.html">
+            
+                    
+                    Languages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="es.html">
+            
+                <a href="es.html">
+            
+                    
+                    ECMAScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="ts.html">
+            
+                <a href="ts.html">
+            
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="chrome_extension.html">
+            
+                <a href="chrome_extension.html">
+            
+                    
+                    Chrome extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="tools.html">
+            
+                <a href="tools.html">
+            
+                    
+                    Tools
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="npm.html">
+            
+                <a href="npm.html">
+            
+                    
+                    Node package manager - npm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="npm-link.html">
+            
+                <a href="npm-link.html">
+            
+                    
+                    npm link
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="nvm.html">
+            
+                <a href="nvm.html">
+            
+                    
+                    Node Version Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="yo.html">
+            
+                <a href="yo.html">
+            
+                    
+                    Yeoman
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="code.html">
+            
+                <a href="code.html">
+            
+                    
+                    Visual Studio Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="be.html">
+            
+                <a href="be.html">
+            
+                    
+                    Backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="node.html">
+            
+                <a href="node.html">
+            
+                    
+                    NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="expressjs.html">
+            
+                <a href="expressjs.html">
+            
+                    
+                    ExpressJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="user_inteface.md">
+            
+                <span>
+            
+                    
+                    User interface
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="vuejs.html">
+            
+                <a href="vuejs.html">
+            
+                    
+                    VueJS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1" data-path="vue_cli.html">
+            
+                <a href="vue_cli.html">
+            
+                    
+                    Generating a Vue application with vue-cli 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2" data-path="vue_electron.html">
+            
+                <a href="vue_electron.html">
+            
+                    
+                    Desktop application with electron and vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="reactjs.html">
+            
+                <a href="reactjs.html">
+            
+                    
+                    ReactJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="wc.html">
+            
+                <a href="wc.html">
+            
+                    
+                    Web components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="polymer.html">
+            
+                <a href="polymer.html">
+            
+                    
+                    Polymer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="presentation.html">
+            
+                <a href="presentation.html">
+            
+                    
+                    Presentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="html.html">
+            
+                <a href="html.html">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="styling.html">
+            
+                <a href="styling.html">
+            
+                    
+                    Styling
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="css.html">
+            
+                <a href="css.html">
+            
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="code_quality.html">
+            
+                <a href="code_quality.html">
+            
+                    
+                    Code quality
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="eslint.html">
+            
+                <a href="eslint.html">
+            
+                    
+                    ESLint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="jsdoc.html">
+            
+                <a href="jsdoc.html">
+            
+                    
+                    JSDoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="http.html">
+            
+                <a href="http.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="cookbook.html">
+            
+                <a href="cookbook.html">
+            
+                    
+                    Cookbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="cookbook-spring-ecosystem.html">
+            
+                <a href="cookbook-spring-ecosystem.html">
+            
+                    
+                    Spring ecosystem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="format-code-idea.html">
+            
+                <a href="format-code-idea.html">
+            
+                    
+                    Format code in idea
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="architecture.html">
+            
+                <a href="architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="bibliography.html">
+            
+                <a href="bibliography.html">
+            
+                    
+                    Bibliography
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Node package manager - npm</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="node-package-manager-npm">Node package manager (npm)</h1>
+<h2 id="what-is-npm">What is npm?</h2>
+<p>To be able to answer this question we have let&apos;s first take a look <a href="node.html#what-is-nodejs">here</a> to see what <strong>NodeJS</strong> is.</p>
+<p>Javascript ecosystem evolution pace is tremendous. Practically whatever you need to do (on the backend side) there is a high chance a library is already out there to help you. And if somehow you are really out of luck you could create a library by yourself and publish it for others to use (and probably improve) it.</p>
+<p>In order to (re)use these libraries (better known as packages or node modules) there was a need to have a way to register and fetch/download them from a registry and later refer them in the code. This is when npm come into play.</p>
+<p>So, node.js/npm allows modularization (or redistribution of the code) in a JavaScript application.</p>
+<ul>
+<li>node.js uses CommonJS to facilitate the export/import of packages</li>
+<li>npm easy the publication/download of those node modules/packages</li>
+</ul>
+<p>As an example a quick way of installing ExpressJS, a JS web framework written in JS which runs on top of node.js:</p>
+<pre><code class="lang-sh">$ npm install express -g
+</code></pre>
+<blockquote>
+<p>As we will see further -g stands for globally. The express module can be reffered to from anywhere in the filesystem. Without this switch the packate is installed in current directory (which has to be a node project - contains package.json)</p>
+</blockquote>
+<p>To those acquainted with java world, npm is for node.js(JavaScript) what maven is for java.</p>
+<p>There are other very useful things npm put on the table:</p>
+<ul>
+<li>run scripts</li>
+<li><span style="color:red">TBD</span></li>
+</ul>
+<h2 id="npm-installation">npm installation</h2>
+<p>Recent versions of node.js is bundled with npm, so, when node.js is installed the npm is installed as well.
+See <a href="node.html#nodejs-installation">here</a> how to install node.js.</p>
+<h2 id="how-to-use-help">How to use help?</h2>
+<hr>
+<ul>
+<li>Get help about the npm command</li>
+</ul>
+<pre><code class="lang-sh">    $ npm -h
+    $ npm --help
+</code></pre>
+<p><br></p>
+<ul>
+<li>Get a quick help about an npm command</li>
+</ul>
+<pre><code class="lang-sh">  $ npm install -h
+</code></pre>
+<p><br></p>
+<ul>
+<li>Get a comprehensive information about a npm command</li>
+</ul>
+<pre><code class="lang-sh">  $ npm <span class="hljs-built_in">help</span> install
+</code></pre>
+<p><br></p>
+<ul>
+<li>Search in help topics</li>
+</ul>
+<pre><code class="lang-sh">  $ npm <span class="hljs-built_in">help</span>-search remove
+</code></pre>
+<p><br></p>
+<h2 id="npm-scripts">Npm scripts</h2>
+<p>Npm scripts are included in the scripts property in package.json</p>
+<ul>
+<li>run a script</li>
+</ul>
+<pre><code class="lang-sh">  $ npm run my_script
+</code></pre>
+<p><br></p>
+<ul>
+<li>There are some popular scripts for which there are some shortcuts</li>
+</ul>
+<pre><code class="lang-sh">  $ npm run start -&gt; $ npm start
+  $ npm run <span class="hljs-built_in">test</span> -&gt; $ npm <span class="hljs-built_in">test</span> | npm tst | npm t
+</code></pre>
+<p><br></p>
+<ul>
+<li>npm list scripts</li>
+</ul>
+<pre><code class="lang-sh">    $ npm run
+</code></pre>
+<p><br></p>
+<p>Npm commands used (regularly) in scripts resides in ./node_modules/.bin (e.g.: mocka, prettier, eslint, uuid).</p>
+<p>E.g: Running the following command in the project home directory creates a new UUID</p>
+<pre><code class="lang-javascript">    $ uuid v1 =&gt; af5ccf30<span class="hljs-number">-4</span>d48<span class="hljs-number">-11e9</span><span class="hljs-number">-9</span>ade<span class="hljs-number">-6</span>dad5455bcd3
+</code></pre>
+<p><br></p>
+<h2 id="create-a-new-js-npm-based-project">Create a new JS npm-based project</h2>
+<p>A new npm based project can be created with one the following commands</p>
+<pre><code class="lang-sh">  $ npm init
+  $ npm init -y    <span class="hljs-comment"># with all the default values accepted</span>
+</code></pre>
+<ul>
+<li>setting the init value (used by npm init)</li>
+</ul>
+<pre><code class="lang-sh">  $ npm <span class="hljs-built_in">set</span> init-author-name &#x2018;Antonel-Ernest Pazargic&#x2019;
+  $ npm config <span class="hljs-built_in">set</span> init-author-name &#x2018;Antonel-Ernest Pazargic&#x2019;
+</code></pre>
+<p><br></p>
+<ul>
+<li>See this documentation for all the init values to setup.</li>
+</ul>
+<p>Go to <a href="https://docs.npmjs.com/misc/config" target="_blank">npm config</a> and search for <code>init-</code></p>
+<p>Or better go to one of the <a href="https://docs.npmjs.com/misc/config#init-author-name" target="_blank">npm init configurations</a></p>
+<p><br></p>
+<blockquote>
+<p>All npm user-scoped settings/config are in the ~/.npmrc</p>
+</blockquote>
+<ul>
+<li>Getting an init value</li>
+</ul>
+<pre><code class="lang-sh">  $ npm get init-author-name
+  $ npm config get init-author-name
+</code></pre>
+<p><br></p>
+<ul>
+<li>delete a default value for npm init</li>
+</ul>
+<pre><code class="lang-sh">  $ npm config delete init-author-name
+</code></pre>
+<p><br></p>
+<h2 id="npm-configuration">Npm configuration</h2>
+<ul>
+<li>Show npm configuration (what is in the ~/.npmrc and more)</li>
+</ul>
+<pre><code class="lang-sh">$ npm config list
+$ npm c ls
+</code></pre>
+<p>The result looks like</p>
+<p><img src="images/npm_config_result.png" alt="result" title="Result"></p>
+<p><br></p>
+<ul>
+<li>Is is possible to see all default values with the following command.</li>
+</ul>
+<pre><code class="lang-sh">  $ npm c ls <span class="hljs-_">-l</span>
+</code></pre>
+<p>This is very useful to see what configuration is available for changing (note: some configurations are read-only).</p>
+<p>Moreover the changed configuration are marked as (overriden). See below how a changed init configuration looks like:</p>
+<pre><code class="lang-text">init-author-email = &quot;Antonel-Ernest.Pazargic@ing.com&quot;
+; init-author-email = &quot;&quot; (overridden)
+</code></pre>
+<p><br></p>
+<ul>
+<li><p>Useful configuration</p>
+<ul>
+<li><p>save-exact (install the latest version exactly)</p>
+<pre><code class="lang-sh">$ npm c <span class="hljs-built_in">set</span> save-exact=<span class="hljs-literal">true</span>
+</code></pre>
+</li>
+<li><p>--save (-S) by default</p>
+<pre><code class="lang-text">npm c set save=true
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<h2 id="module-dependencies">Module dependencies</h2>
+<ul>
+<li><p>install dependencies</p>
+<ul>
+<li>in production code (using --save/-S/--save-prod/-P - command option)<pre><code class="lang-sh">$ npm install lodash --save
+$ npm i lodash -S
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<ul>
+<li><p>in devDependencies (using --save-dev/-D command option)</p>
+<pre><code class="lang-sh">$ npm install karma --save-dev
+$ npm i karma -D
+</code></pre>
+</li>
+</ul>
+<p><br></p>
+<ul>
+<li>install a npm package from a local directory<pre><code class="lang-sh">$ npm i -S ../npm1
+</code></pre>
+</li>
+</ul>
+<p><br></p>
+<ul>
+<li><p>install a npm package from a git repo (github)</p>
+<pre><code class="lang-sh">$ npm install https://github.com/jtonic/js-for-beginers.gitt<span class="hljs-comment">#master --save</span>
+$ npm install jtonic/js-for-beginners<span class="hljs-comment">#master --save</span>
+</code></pre>
+</li>
+</ul>
+<p><br></p>
+<ul>
+<li>remove dependencies no longer needed</li>
+</ul>
+<p>During the development there are times when some no more wanted packages are still in the node_modules, but they are no longer in the package.json.
+In order to do a package cleanup</p>
+<pre><code class="lang-sh">$ npm prune
+</code></pre>
+<p>And when preparing the production code</p>
+<pre><code class="lang-sh">$ npm prune --production -&gt; no more --save-dev dependencies <span class="hljs-keyword">in</span> the node_modules
+</code></pre>
+<p><br></p>
+<ul>
+<li>List the installed packages</li>
+</ul>
+<pre><code class="lang-sh">$ npm list  <span class="hljs-comment"># or ll or la</span>
+$ npm list --depth 0 <span class="hljs-comment"># shows only the first dependencies level (the ones declared in the package.json. No transient dependencies)</span>
+</code></pre>
+<p><br></p>
+<ul>
+<li>list only dev dependencies</li>
+</ul>
+<pre><code class="lang-sh">$ npm list --depth 0 --dev <span class="hljs-literal">true</span>  <span class="hljs-comment"># or --prod true</span>
+</code></pre>
+<ul>
+<li>parseable format -&gt; to see where the global dependencies resides in</li>
+</ul>
+<pre><code class="lang-sh">$ npm list --depth 0 --global <span class="hljs-literal">true</span> --parseable <span class="hljs-literal">true</span>
+</code></pre>
+<blockquote>
+<p>Note: -g &#x21D4; --global true</p>
+</blockquote>
+<p><br></p>
+<h2 id="npm-registry">Npm registry</h2>
+<p>In <a href="https://www.npmjs.com" target="_blank">registry</a> we can search for a package, e.g.
+<a href="https://www.npmjs.com/package/lodash" target="_blank">lodash</a></p>
+<p><br></p>
+<ul>
+<li><p>How to see the package.json information?</p>
+<p><a href="http://registry.npmjs.org/lodash" target="_blank">http://registry.npmjs.org/lodash</a> (or <a href="http://npm.im/lodash" target="_blank">http://npm.im/lodash</a> )</p>
+</li>
+</ul>
+<blockquote>
+<p>Note: In order to see the json pretty formatted you can install a browser add-on, extension.</p>
+</blockquote>
+<p>For Opera I&apos;ve installed json-lite <a href="https://addons.opera.com/en/extensions/details/json-lite/" target="_blank">https://addons.opera.com/en/extensions/details/json-lite/</a></p>
+<p><br></p>
+<h2 id="publishing-a-package">Publishing a package</h2>
+<ul>
+<li><p>sign up on npmjs.com</p>
+</li>
+<li><p>register the npmjs.com username
+<code>$ npm adduser</code></p>
+</li>
+<li><p>create a new folder, say &#x2018;my-test-package&#x2019; and make it current</p>
+</li>
+<li><p>create a new github.com repository on <a href="https://github.com/{userName}" target="_blank">https://github.com/{userName}</a></p>
+</li>
+<li><p>enable VCS (git)
+<code>$ git init</code></p>
+</li>
+<li><p>add git remote repository</p>
+</li>
+</ul>
+<pre><code class="lang-sh">$ git remote add origin https://github.com/jtonic/my-test-package.git`
+</code></pre>
+<ul>
+<li>create a username (or organization name) scope package json file</li>
+</ul>
+<pre><code class="lang-sh">$ npm init --scope=@npm_username
+$ git add .
+$ git commit -m &#x2018;Initial commit&#x2019;
+$ git push origin master
+</code></pre>
+<ul>
+<li><p>publish to npmjs registry
+<code>$ npm publish --access public</code></p>
+</li>
+<li><p>See the information about the published package
+<code>$ npm info @jtonic/my-test-package</code></p>
+</li>
+<li><p>See the github repo of the npm package
+<code>npm repo @jtonic/my-test-package</code></p>
+</li>
+<li><p>Or see the package info in browser <a href="http://registry.npmjs.org/@jtonic/my-test-package" target="_blank">http://registry.npmjs.org/@jtonic/my-test-package</a></p>
+</li>
+<li><p>Create a git tag
+<code>git tag 0.1.0</code></p>
+</li>
+<li><p>Push tag to origin/master
+<code>git push --tags</code></p>
+</li>
+<li><p>Updating the npm package to a new patch version</p>
+<ul>
+<li>Do whatever changes is required</li>
+</ul>
+<pre><code class="lang-sh">$ npm version patch  // this changes the version <span class="hljs-keyword">in</span> package.json, commit the change and make a tag
+$ git push
+$ git push --tags
+$ npm publish --access public
+</code></pre>
+</li>
+</ul>
+<h2 id="versioning-the-npm-package">Versioning the npm package</h2>
+<p>See the <a href="http://semver.org" target="_blank">semantic versioning</a></p>
+<p><code>M.m.p.x (1.12.224)</code></p>
+<p>M - major - 1</p>
+<p>m - minor - 12</p>
+<p>p - patch - 224</p>
+<pre><code>To better keep in mind the version elements semantics
+</code></pre><p><code>B.F.Bf.x</code></p>
+<p>M major -&gt; B break</p>
+<p>m minor -&gt; F feature</p>
+<p>p patch -&gt; Bf bug fix</p>
+<blockquote>
+<p><span style="color: red">Continue formating from here</span></p>
+</blockquote>
+<p>How to see the version of the current npm module (plus node, npm and other packages version).</p>
+<pre><code class="lang-sh">  $ npm version
+</code></pre>
+<ul>
+<li>Bump the version</li>
+</ul>
+<pre><code class="lang-sh">  $ npm version patch -&gt; increase the patch version segment
+  $ npm version <span class="hljs-variable">$my_version</span> -&gt; setup a specific version
+</code></pre>
+<h2 id="npm-link-to-the-resque"><code>npm link</code> to the resque</h2>
+<p>npm link is special because it allows to load a module from any folder in the file system.
+Without it the npm resolution dependency works using the following order:</p>
+<ul>
+<li>figure out if the dependency is a core modules and load from the node.js distribution</li>
+<li>if it is a relative path<ul>
+<li>search the dependency using the relative path in the current directory</li>
+<li>looks in the <code>./node_modules</code> directory</li>
+<li>if not found look in there search furhter in the parent directory&apos;a <code>node_modules</code> until dependency is found or the root (/) directory is reached</li>
+</ul>
+</li>
+</ul>
+<p>npm link is used in a very special use case:</p>
+<blockquote>
+<p><span style="color:red">Use case:</span> A dependency is modified very frequenctly and both dependent and dependency are developed by the same team.</p>
+</blockquote>
+<p>Let&#x2019;s suppose we develop node.js application <code>my-app</code> and a dependency <code>my-test-package</code> (both of them as npm module).
+The case is:</p>
+<ol>
+<li><p>the (new version of) dependency is not quite tested, or</p>
+</li>
+<li><p>the application is its first client and we want to test the dependency through the my-app client.</p>
+</li>
+</ol>
+<p>The straightforward way of doing this are one of the following:</p>
+<ol>
+<li><p>publish the dependency in npm registry whenever it is modified and pick it up in the the <code>my-app</code> (which is quite cumbersome because we have to deal with versioning), and end up having a lot of intermediary versions in npm registry.</p>
+<p><span style="color:red"><strong>HIGHLY UNRECOMMENDED</strong></span></p>
+</li>
+<li><p>considering we have my-test-package` version controled (git) another option is to performed the changes in a new branch and add/commit/push the changes.</p>
+<p>Then in <code>my-app</code> package.json dependency property we have to refer the git repo branch of the dependency where the new change commits resided in.</p>
+<p>This requires a lot of git add, commit, push (proliferation of the commits).</p>
+</li>
+<li><p>modify directly the files in the <code>my-app/node_modules/${my-test-package}</code>, but this requires to keep the track of all changes in order to replicate them in the my-test-package npm package. This could lead to issues when something in the node_modules is not picked up.</p>
+</li>
+</ol>
+<p>A more straightforward of doing this is using the <strong>npm link</strong>.</p>
+<blockquote>
+<p><strong>Note:</strong> In examples below we have a scope for <code>my-test-package</code> (@jtonic) which is useful for scoping npm packages in npm registry. For simple cases (or when npm package resides only in git repo - github) you can leave it out.</p>
+</blockquote>
+<h2 id="steps">Steps:</h2>
+<ul>
+<li>in <code>my-test-package</code> home directory</li>
+</ul>
+<pre><code class="lang-sh">  $ npm link
+</code></pre>
+<ul>
+<li>test the link</li>
+</ul>
+<pre><code class="lang-sh">  $ npm ls -g --depth 0
+</code></pre>
+<p>We have to see the my-test-package in the list linked to the directory it resides in.</p>
+<pre><code class="lang-text">APM3LC02VH2FMHV2N:js_ecosystem_for_the_impatient ws31wx$ npm ls -g --depth 0
+/usr/local/lib
+&#x251C;&#x2500;&#x2500; bower@1.8.8
+&#x251C;&#x2500;&#x2500; ...
+&#x251C;&#x2500;&#x2500; my-test-package@0.0.1 -&gt; /path/to/my-test-package
+&#x251C;&#x2500;&#x2500; ...
+</code></pre>
+<ul>
+<li>in <code>my-app</code> home directory</li>
+</ul>
+<pre><code class="lang-sh">  $ npm link @jtonic/my-test-package
+</code></pre>
+<p>after this command have run we end up having:</p>
+<ul>
+<li>the dependency in ./node_module/@jtonic</li>
+<li>no entries in the dependencies section in package.json if the dependency was not yet there already</li>
+</ul>
+<p>Whenever we modify something in the <code>my-test-package</code> dependency (thanks to the symlink) the change is automatically seen in the <code>my-app</code> module/package</p>
+<p>As soon as we find that the <code>my-test-package</code> is the way we like it to be (stable) it&apos;s time to replace the link and use the correct dependency.</p>
+<p>Follow these steps to do this:</p>
+<ul>
+<li>in <code>my-test-package</code> home directory:</li>
+</ul>
+<pre><code class="lang-sh">  $ git add .
+  $ git commit -m &#x2018;some changes&#x2019;
+  $ git push
+</code></pre>
+<ul>
+<li>patch the npm version (this commands performed some git activities - commits/tag)</li>
+</ul>
+<pre><code class="lang-sh">  $ npm version patch
+</code></pre>
+<ul>
+<li>push changes and tags in git repo</li>
+</ul>
+<pre><code class="lang-sh">  $ git push <span class="hljs-comment"># to push the commits created by npm version patch</span>
+  $ git push --tags <span class="hljs-comment"># to push the tag created by npm version patch</span>
+</code></pre>
+<ul>
+<li>publish node module on npm registry</li>
+</ul>
+<pre><code class="lang-sh">  $ npm publish --access public
+</code></pre>
+<ul>
+<li>in my-app home directory</li>
+</ul>
+<pre><code class="lang-sh">  $ npm uninstall --no-save @jtonic/my-test-package
+</code></pre>
+<ul>
+<li><em>[optional]</em> npm info @jtonic/my-test-package version</li>
+<li><p><em>[optional]</em> npm info @jtonic/my-test-package dist-tags</p>
+</li>
+<li><p>force the installation of the new published npm module</p>
+</li>
+</ul>
+<pre><code class="lang-sh">  $ npm i --save  @jtonic/my-test-package@0.1 <span class="hljs-comment"># to force latest patch version</span>
+</code></pre>
+<ul>
+<li>in my-test-package</li>
+</ul>
+<pre><code class="lang-sh">  $ npm uninstall <span class="hljs-comment"># delete global symlink</span>
+</code></pre>
+<p>A good and brief explanation of the npm link <a href="https://medium.com/@alexishevia/the-magic-behind-npm-link-d94dcb3a81af" target="_blank">here</a></p>
+<p><span style="color:red"> <strong>Continue from here....</strong></span></p>
+<h2 id="semantic-versioning-and-npm">Semantic versioning and npm</h2>
+<p><code>^4.0.0</code> -&gt; <code>^</code> will use the latest minor version. Supposing 4.17.11 is the one then
+npm update
+$ npm i -S lodash@4.0.0     -&gt; lodash: ^4.11.1 in package json
+$ npm up -S lodash -&gt; lodash: ^4.17.11 in package.json and npm ls -S --depth=0 --long=true</p>
+<p>~3.7.2 -&gt; ~ will use the latest major version. Supposing it is 4.17.11
+$ npm up -S lodash -&gt; lodash: ^4.17.11 in package.json and npm ls -S --depth=0 --long=true</p>
+<p>Use ~ with great care because it could break the code.</p>
+<p>Show the information about a package</p>
+<ul>
+<li>full output</li>
+</ul>
+<pre><code class="lang-sh">$ npm info lodash
+</code></pre>
+<ul>
+<li>show only a specific section, such as versions</li>
+</ul>
+<pre><code class="lang-sh">$ npm info lodash versions  <span class="hljs-comment"># show versions history</span>
+$ npm info lodash dist-tags.latest <span class="hljs-comment"># show the latest version</span>
+</code></pre>
+<p>List the globally installed packages</p>
+<pre><code>$ npm list --global true --depth 0
+$ npm list --global true --depth 0 --long true  # further information about the package (home page, git repo, etc)
+</code></pre><h2 id="miscellaneous-npm-commands">Miscellaneous npm commands</h2>
+<ul>
+<li>find out the directory where global modules are installed</li>
+</ul>
+<pre><code class="lang-sh">  $ npm root -g
+</code></pre>
+<blockquote>
+<p>output: /usr/local/lib/node_modules</p>
+</blockquote>
+<ul>
+<li>find out the directory where dependencies are installed locally</li>
+</ul>
+<pre><code class="lang-sh">  $ npm root
+</code></pre>
+<blockquote>
+<p>output(ex): /Users/ws31wx/jtonic/Dev/github/js_ecosystem_for_the_impatient/node_modules</p>
+</blockquote>
+<ul>
+<li>open the VCS repo of the module in default browser</li>
+</ul>
+<pre><code class="lang-sh">$ npm repo lodash <span class="hljs-comment"># opens the browser with the source  code repo of lodash</span>
+</code></pre>
+<ul>
+<li>Execute npm command in silent mode (-s/--silent)</li>
+</ul>
+<pre><code class="lang-sh">$ npm <span class="hljs-built_in">test</span> --silent <span class="hljs-comment"># or -s</span>
+</code></pre>
+<ul>
+<li>How to enforce the node and npm versions in npm package. In package.json add the following:</li>
+</ul>
+<pre><code class="lang-json"><span class="hljs-string">&quot;engines&quot;</span>: {
+  <span class="hljs-string">&quot;node&quot;</span>: <span class="hljs-string">&quot;~8.11.4&quot;</span>,
+  <span class="hljs-string">&quot;npm&quot;</span>: <span class="hljs-string">&quot;~5.6.0&quot;</span>
+},
+</code></pre>
+<h2 id="useful-links">Useful links</h2>
+<p><a href="https://docs.npmjs.com/misc/config#shorthands-and-other-cli-niceties" target="_blank">https://docs.npmjs.com/misc/config#shorthands-and-other-cli-niceties</a>
+<a href="https://docs.npmjs.com/misc/scripts" target="_blank">https://docs.npmjs.com/misc/scripts</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="tools.html" class="navigation navigation-prev " aria-label="Previous page: Tools">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="npm-link.html" class="navigation navigation-next " aria-label="Next page: npm link">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Node package manager - npm","level":"1.6.1","depth":2,"next":{"title":"npm link","level":"1.6.1.1","depth":3,"path":"npm-link.md","ref":"npm-link.md","articles":[]},"previous":{"title":"Tools","level":"1.6","depth":1,"path":"tools.md","ref":"tools.md","articles":[{"title":"Node package manager - npm","level":"1.6.1","depth":2,"path":"npm.md","ref":"npm.md","articles":[{"title":"npm link","level":"1.6.1.1","depth":3,"path":"npm-link.md","ref":"npm-link.md","articles":[]},{"title":"Node Version Manager","level":"1.6.1.2","depth":3,"path":"nvm.md","ref":"nvm.md","articles":[]}]},{"title":"Yeoman","level":"1.6.2","depth":2,"path":"yo.md","ref":"yo.md","articles":[]},{"title":"Visual Studio Code","level":"1.6.3","depth":2,"path":"code.md","ref":"code.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["anchorjs","katex","block-align","flexible-alerts","creativecommons","fontsettings","smart-nav-collapse"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"block-align":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"family":"sans","size":2,"theme":"night"},"highlight":{},"creativecommons":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"smart-nav-collapse":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JS ecosystem for the impatient","links":{"sidebar":{"Contact us / Support":"https://github.com/jtonic/js_ecosystem_for_the_impatient/issues"}},"gitbook":"*"},"file":{"path":"npm.md","mtime":"2020-02-16T11:23:18.508Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-16T11:24:32.278Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-smart-nav-collapse/smart-nav-collapse.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
